@@ -1,0 +1,130 @@
+{% extends 'base_temp.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-dismissible alert-{{ message.tags }}">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <p>{{ message }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-1 col-md-10">
+
+                {% if form.non_form_errors %}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-danger">
+                                <ul>
+                                    {% for error in form.non_form_errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                <br><br><br>
+                <form method="POST">
+
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class=" col-xs-12 col-md-offset-1 col-md-11">
+
+                            <div class="form-horizontal">
+
+                                {#                                    {% for form in form.visible_forms %}#}
+                                <div class="form-group {% if form.customer_name.errors %}has-error{% endif %}">
+                                    <label class="col-md-3 control-label">{{ form.customer_name.label }}</label>
+                                    <div class="col-md-6">
+                                        {{ form.customer_name }}
+                                        {% if form.customer_name.errors %}
+                                            <div class="help-block">
+                                                {{ form.customer_name.errors }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="form-group {% if form.item.errors %}has-error{% endif %}">
+                                    <label class="col-md-3 control-label">{{ form.item.label }}</label>
+                                    <div class="col-md-6">
+                                        {{ form.item }}
+                                        {% if form.item.errors %}
+                                            <div class="help-block">
+                                                {{ form.item.errors }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="form-group {% if form.quantity.errors %}has-error{% endif %}">
+                                    <label class="col-md-3 control-label">{{ form.quantity.label }}</label>
+                                    <div class="col-md-6">
+                                        {{ form.quantity }}
+                                        {% if form.quantity.errors %}
+                                            <div class="help-block">
+                                                {{ form.quantityerrors }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label class="col-md-3 control-label">Total</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control total">
+                                    </div>
+                                </div>
+                                {#                                    {% endfor %}#}
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <button type="submit" name="submit" class="btn btn-primary">Submit
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer style="background-color: #337ab7;" id="#aboutus">
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-center text-white"> Built With <i class="fa fa-heart text-danger"></i> In
+                        Biratnagar
+                    </p>
+                    <p class="text-center text-white">&copy; CopyRight <strong>Spyders</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+{% block extra_script %}
+    <script src="{% static 'js/transaction/transaction_js.js' %}"></script>
+{% endblock %}
+
+

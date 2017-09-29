@@ -1,0 +1,12 @@
+Django==1.11.5
+psycopg2==2.7.3.1
+pytz==2017.2
+django-environ==0.4.1
+gunicorn==19.6.0
+ipython==5.1.0
+requests==2.12.4
+PyJWT==1.4.2
+dropbox==7.1.1
+django-storages==1.5.2
+XlsxWriter==0.9.6
+WeasyPrint==0.34

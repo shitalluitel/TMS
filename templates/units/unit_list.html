@@ -1,0 +1,104 @@
+{% extends 'base_temp.html' %}
+
+{% block breadcrumb %}
+    <div class="container-fluid breadcrumb-style">
+        <div class="page-header">
+            <h3>
+                Unit
+                <small> | List</small>
+            </h3>
+        </div>
+        <ol class="breadcrumb">
+            <li><a href="{% url 'unit_list' %}">Home</a></li>
+            <li>Unit</li>
+        </ol>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-right">
+                    <a href="{% url 'unit_create' %}" class="btn btn-primary"> <span> <i class="fa fa-plus">&nbsp; </i></span>
+                        Add</a>
+                    <br>
+                    <br>
+                </div>
+                <table class="table table-hover table-striped table-responsive">
+                    <thead>
+                    <tr class="bg-primary">
+                        <th style="width: 10%">S.N.</th>
+                        <th style="width: 40%">Name</th>
+                        <th style="width: 40%">Print Name</th>
+                        <th style="width: 10%"></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    {% for unit in units.object_list %}
+
+                        <tr>
+                            <td>  {{ forloop.counter0|add:units.start_index }}</td>
+                            <td>{{ unit.name }}</td>
+                            <td>{{ unit.print_name }}</td>
+                            <td>
+                                <a href="{% url 'unit_edit' pk=unit.id %}"><span><i class="fa fa-edit fa-2x"></i></span></a>
+                                &nbsp;
+                                <a href="{% url 'unit_delete' pk=unit.id %}"><span> <i class="fa fa-trash text-danger fa-2x"></i></span></a>
+                            </td>
+                        </tr>
+
+                    {% empty %}
+                        <tr class="bg-danger">
+                            <td class="text-center text-danger text-large" colspan="3">None</td>
+                        </tr>
+                    {% endfor %}
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <ul class="pagination">
+                {% if units.has_previous %}
+                    <li><a href="?page={{ units.previous_page_number }}">&laquo;
+                        Previous</a></li>
+                {% else %}
+                    <li class="disabled"><span>&laquo; Previous</span></li>
+                {% endif %}
+                {% for i in units.paginator.page_range %}
+                    {% if units.number == i %}
+                        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                    {% else %}
+                        <li><a href="?page={{ i }}">{{ i }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% if units.has_next %}
+                    <li><a href="?page={{ units.next_page_number }}">Next &raquo;</a></li>
+                {% else %}
+                    <li class="disabled"><span>Next &raquo;</span></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <br>
+{% endblock %}
+
+{% block footer %}
+    <footer style="background-color: #337ab7;" id="#aboutus">
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-center text-white"> Built With <i class="fa fa-heart text-danger"></i> In Biratnagar
+                    </p>
+                    <p class="text-center text-white">&copy; CopyRight <strong>Spyders</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
