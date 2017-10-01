@@ -16,7 +16,7 @@ class TransactionForm(forms.ModelForm):
 
     quantity = forms.CharField(
         label='Quantity',
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': '2'})
+        widget=forms.TextInput(attrs={'class': 'form-control item-quantity', 'placeholder': '2'})
     )
 
     customer_name = forms.CharField(
