@@ -11,4 +11,5 @@ class Transaction(models.Model):
     customer_name = models.CharField(null=False, max_length=120)
     quantity = models.DecimalField(max_digits=8, decimal_places=2, null=False)
     total_price = models.DecimalField(max_digits=8, decimal_places=2, null=False)
-    created_date = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateField(auto_now_add=True)
+

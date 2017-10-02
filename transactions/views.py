@@ -4,7 +4,9 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import TransactionForm
 from django.contrib import messages
 from .models import Transaction
-import datetime
+# from items.models import Item
+from datetime import datetime
+
 
 # Create your views here.
 
@@ -14,9 +16,9 @@ def transaction_create(request):
     if request.method == 'POST':
         if form.is_valid():
             transaction = form.save(commit=False)
-            transaction.total_price = transaction.Transaction.unit_price * transaction.quantity
+            transaction.total_price = transaction.item.unit_price * transaction.quantity
+            transaction.created_date = datetime.now()
             transaction.user = request.user
-            transaction.created_date = datetime.datetime.today().strftime('%Y-%m-%d')
             transaction.save()
             messages.success(request, "Successful transaction")
             return redirect('transaction_create')
@@ -28,12 +30,13 @@ def transaction_create(request):
 
 @login_required
 def transaction_list(request):
-    transaction = Transaction.objects.all().order_by("created_date")
     start_date = request.GET.get('start_date')
     end_date = request.GET.get('end_date')
-    item_name = request.GET.get('item_name')
-    print("start date: %s \n end date: %s" % (start_date, end_date))
-
+    # item_name = request.GET.get('item_name')
+    if start_date and end_date:
+        transaction = Transaction.objects.filter(created_date__range=(str(start_date),str(end_date)))
+    else:
+        transaction = Transaction.objects.all().order_by("created_date")
     per_page = 10
     paginator = Paginator(transaction, per_page)
     page = request.GET.get('page')
@@ -55,7 +58,7 @@ def transaction_edit(request, pk):
     if request.method == 'POST':
         if form.is_valid():
             transaction = form.save(commit=False)
-            transaction.total_price = transaction.Transaction.unit_price * transaction.quantity
+            transaction.total_price = transaction.item.unit_price * transaction.quantity
             transaction.user = request.user
             transaction.save()
             messages.success(request, "Successful transaction")
