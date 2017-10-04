@@ -32,9 +32,12 @@ def transaction_create(request):
 def transaction_list(request):
     start_date = request.GET.get('start_date')
     end_date = request.GET.get('end_date')
-    # item_name = request.GET.get('item_name')
+    item_name = request.GET.get('item_name')
+    form = TransactionForm()
     if start_date and end_date:
         transaction = Transaction.objects.filter(created_date__range=(str(start_date),str(end_date)))
+    elif item_name:
+        transaction = Transaction.objects.filter(item=item_name)
     else:
         transaction = Transaction.objects.all().order_by("created_date")
     per_page = 10
@@ -48,7 +51,21 @@ def transaction_list(request):
     except EmptyPage:
         transactions = paginator.page(paginator.num_pages)
 
-    return render(request, 'transactions/transaction_list.html', {'transactions': transactions})
+    if start_date and end_date:
+        context = {
+            'transactions': transactions,
+            'start_date': start_date,
+            'end_date': end_date,
+            'form': form
+        }
+    else:
+        context = {
+            'transactions': transactions,
+            'item_name': item_name,
+            'form': form
+        }
+
+    return render(request, 'transactions/transaction_list.html', context)
 
 
 @login_required
