@@ -5,14 +5,14 @@ from django.db import models, migrations
 
 
 def load_units(apps, schema_editor):
-    Units = apps.get_model('units', 'Unit')
+    Units = apps.get_model('units', 'unit')
     units_data = Units(id=1, user=1, name='Kilogram', print_name='KG')
     units_data.save()
 
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('units', '0001_initial'),
+        ('units', '0005_auto_20170928_1439'),
     ]
 
     operations = [
