@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'w8)(!h$^$cno&tn_@$u#-v=7qp7i+w&(v=e9actc%@3)6*x4=*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', '192.168.100.7']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '192.168.100.7', 'lupim.herokuapp.com']
 
 # Application definition
 
