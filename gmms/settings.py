@@ -24,7 +24,7 @@ SECRET_KEY = 'w8)(!h$^$cno&tn_@$u#-v=7qp7i+w&(v=e9actc%@3)6*x4=*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0','192.168.16.106']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '192.168.100.7']
 
 # Application definition
 
@@ -81,15 +81,23 @@ WSGI_APPLICATION = 'gmms.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'luitelgmms',
+#         'USER': 'shital1',
+#         'PASSWORD': 'luitel@dell.com',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'luitelgmms',
-        'USER': 'shital1',
-        'PASSWORD': 'luitel@dell.com',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
 }
 
 # Password validation
@@ -127,9 +135,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '/staticfiles/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 # useful during user login
 LOGIN_URL = '/users/login/'

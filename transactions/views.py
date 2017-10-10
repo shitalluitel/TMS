@@ -35,9 +35,9 @@ def transaction_list(request):
     item_name = request.GET.get('item_name')
     form = TransactionForm()
     if start_date and end_date:
-        transaction = Transaction.objects.filter(created_date__range=(str(start_date),str(end_date)))
+        transaction = Transaction.objects.filter(created_date__range=(str(start_date),str(end_date))).order_by('created_date')
     elif item_name:
-        transaction = Transaction.objects.filter(item=item_name)
+        transaction = Transaction.objects.filter(item=item_name).order_by('created_date')
     else:
         transaction = Transaction.objects.all().order_by("created_date")
     per_page = 10

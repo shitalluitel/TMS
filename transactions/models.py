@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 class Transaction(models.Model):
     user = models.ForeignKey(User, related_name='transaction', on_delete=models.CASCADE)
-    item = models.ForeignKey(Item, related_name='transaction', on_delete=models.CASCADE)
+    item = models.ForeignKey(Item, related_name='transaction')
     customer_name = models.CharField(null=False, max_length=120)
     quantity = models.DecimalField(max_digits=8, decimal_places=2, null=False)
     total_price = models.DecimalField(max_digits=8, decimal_places=2, null=False)

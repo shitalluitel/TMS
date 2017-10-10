@@ -1,4 +1,8 @@
 {% extends 'base_temp.html' %}
+{% load staticfiles %}
+{% block extra_stylesheets %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
 {% block content %}
     <div class="container">
         <div class="row">
@@ -17,7 +21,6 @@
 
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
-
                 {% if form.non_field_errors %}
                     <div class="row">
                         <div class="col-md-12">
@@ -31,38 +34,69 @@
                         </div>
                     </div>
                 {% endif %}
-                <div class="row">
-                    <form method="POST">
+            </div>
+        </div>
 
-                        {% csrf_token %}
-                        <div class="form-horizontal">
+        <div class="page-wrapper">
+            <main class="main-wrapper">
+                <div class="container-fluid page-login-wrap">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6 login-form-wrap">
 
-                            {% for field in form.visible_fields %}
-                                <div class="form-group {% if field.errors %}has-error{% endif %}">
-                                    <div class="col-md-3">
-                                        <label class="control-label text-left">{{ field.label }}</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        {{ field }}
-                                        {% if field.errors %}
-                                            <div class="has-error">
-                                                <div class="help-block">{{ field.errors }}</div>
+                                <div class="school-title-wrap">
+                                    <div class="col-md-12"><h3 class="text-center">Spyders App</h3></div>
+                                </div>
+                                <br>
+
+                                <div >
+                                    <div class="col-md-5 school-logo-wrap">
+                                    <img class="logo-height"
+                                         src="{% static 'image/kict.png' %}">
+                                </div>
+                                    <div class="col-md-6">
+                                    <form class="login-form" method="POST">
+
+                                        {% csrf_token %}
+                                        <div class="form-horizontal">
+
+
+                                            <div class="form-group {% if form.username.errors %}has-error{% endif %}">
+                                                <div class="input-group"><span class="input-group-addon"><em
+                                                        class="fa fa-user"></em></span>
+                                                    {{ form.username }}
+                                                </div>
                                             </div>
-                                        {% endif %}
-                                    </div>
+
+                                            <div class="form-group {% if form.password.errors %}has-error{% endif %}">
+                                                <div class="input-group"><span class="input-group-addon"><em
+                                                        class="fa fa-lock"></em></span>
+                                                    {{ form.password }}
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-block" name="submit"
+                                                        type="submit">
+                                                    <em class="fa fa-sign-in"></em> Login
+                                                </button>
+                                                <a class="pull-right margin-top-10"
+                                                   href="{% url 'send_password_reset_email' %}">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                            {% endfor %}
-                            <div class="form-group">
-                                <div class="col-md-8 col-md-offset-3">
-                                    <button type="submit" name="submit" class="btn btn-primary btn-block">Login
-                                    </button>
                                 </div>
-                            </div>
 
                         </div>
-                    </form>
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6 text-center"><p class="margin-top-20">Powered by <a
+                                    href="http://zefed.com" target="_blank">Spyders</a></p></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </main>
+
         </div>
     </div><br><br>
 {% endblock %}
