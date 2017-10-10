@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002ddf32-a8b1-4dfc-9276-7864a8dfaf2e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py" afterPath="$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,11 +88,21 @@
       <file leaf-file-name="0006_auto_20171010_1541.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="324">
+              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding>
                 <element signature="e#73#112#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/units/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -274,7 +285,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;vie&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;models&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;view&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;bas&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;tra&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction/transaction_js.js&#10;transa&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction/transaction_js.js&#10;url&#9;FILE&#9;file:///home/shital/gmms/transactions/urls.py&#10;users/vi&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;css&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_list.html&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;list&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_list.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;trans&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;settin&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;units/m&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;mo&#9;FILE&#9;file:///home/shital/gmms/items/models.py&#10;mod&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;form&#9;FILE&#9;file:///home/shital/gmms/units/forms.py" />
+    <property name="SearchEverywhereHistoryKey" value="models&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;vie&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;view&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;bas&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;tra&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction/transaction_js.js&#10;transa&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction/transaction_js.js&#10;url&#9;FILE&#9;file:///home/shital/gmms/transactions/urls.py&#10;users/vi&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;css&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_list.html&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;list&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_list.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;trans&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;settin&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;units/m&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;mo&#9;FILE&#9;file:///home/shital/gmms/items/models.py&#10;mod&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;form&#9;FILE&#9;file:///home/shital/gmms/units/forms.py" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -1006,14 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/units/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/units/migrations/0005_auto_20170928_1439.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1046,10 +1049,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/units/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="324">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding>
             <element signature="e#73#112#0" expanded="true" />
           </folding>

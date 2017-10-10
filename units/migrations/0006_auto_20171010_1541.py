@@ -6,7 +6,7 @@ from django.db import models, migrations
 
 def load_units(apps, schema_editor):
     Units = apps.get_model('units', 'unit')
-    units_data = Units(id=1, User=1, name='Kilogram', print_name='KG')
+    units_data = Units(id=1, user_id=1, name='Kilogram', print_name='KG')
     units_data.save()
 
 
