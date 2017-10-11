@@ -78,6 +78,16 @@ class RegisterForm(forms.ModelForm):
                                               self.instance)  # to validate password. it is done by django itself.
         return confirm_password
 
+    def save(self, commit=True):
+        user = super(RegisterForm, self).save(commit=False)
+        user.set_password(self.cleaned_data["password"])
+        if commit:
+            user.save()
+        user.send_confirmation_email()
+        # category = Category(user=user, name='Uncategorized')
+        # category.save()
+        return user
+
 
 class SendPasswordResetEmailForm(forms.Form):
     """
@@ -194,15 +204,15 @@ class ProfileForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields={
+        fields = {
             'first_name',
             'last_name',
             'username',
             'email',
         }
         widgets = {
-            'first_name': forms.TextInput(attrs={'class':'form-control', 'placeholder': 'Enter your first name'}),
-            'last_name': forms.TextInput(attrs={'class':'form-control', 'placeholder': 'Enter your last name'}),
-            'username': forms.TextInput(attrs={'class':'form-control', 'placeholder': 'Enter your username'}),
+            'first_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your first name'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your last name'}),
+            'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your username'}),
             'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Enter your email'}),
         }

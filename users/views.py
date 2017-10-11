@@ -75,6 +75,44 @@ def user_register(request):
     return render(request, 'users/register.html', context)
 
 
+def user_email_confirm(request):
+    """
+    Confirm user's email
+    """
+    if request.user.is_authenticated():
+        return redirect('/')
+
+    token = request.GET.get('token')
+    if token is None:
+        raise Http404()
+
+    try:
+        payload = jwt.decode(token, settings.SECRET_KEY, algorithm='HS256')
+    except jwt.ExpiredSignature:
+        messages.error(request, 'Confirmation token has expired.')
+        return redirect('home')
+    except jwt.DecodeError:
+        messages.error(request, 'Error decoding confirmation token.')
+        return redirect('home')
+    except jwt.InvalidTokenError:
+        messages.error(request, 'Invalid confirmation token.')
+        return redirect('home')
+
+    try:
+        user = User.objects.get(pk=payload['confirm'])
+    except User.DoesNotExist:
+        messages.error(request, 'Account not found.')
+        return redirect('home')
+
+    if user.is_confirmed:
+        messages.error(request, "Email already confirmed.")
+    else:
+        user.is_confirmed = True
+        user.save()
+        messages.success(request, "Email confirmed.")
+    return redirect('users:login')
+
+
 def user_send_password_reset_email(request):
     """
     Send password reset email
