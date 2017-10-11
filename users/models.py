@@ -1,15 +1,14 @@
 from datetime import datetime, timedelta
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-from django.db import models
-from .validators import UsernameValidator
+
 import jwt
 import requests
 
-
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.db import models
 from django.conf import settings
 
+from .validators import UsernameValidator
 
-# Create your models here.
 
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **kwargs):
@@ -41,25 +40,22 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser):
     """
-    user model
+    User model
     """
-
     username = models.CharField(
-        max_length=225,
+        max_length=255,
         unique=True,
         validators=[UsernameValidator()],
         error_messages={
             'unique': 'User with this username already exists.',
         },
     )
-
     email = models.EmailField(
         unique=True,
         error_messages={
             'unique': 'User with this email already exists.',
         },
     )
-
     first_name = models.CharField(max_length=40)
     last_name = models.CharField(max_length=40)
     is_confirmed = models.BooleanField(default=False)
@@ -91,10 +87,6 @@ class User(AbstractBaseUser):
         token = self.generate_confirmation_token()
         link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
         html = '<html>Click on the below link to confirm your email. <a href="{}">{}</a></html>'.format(link, link)
-        """
-        use to send email using server
-        """
-
         data = {
             'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
             'to': self.email,
@@ -103,14 +95,8 @@ class User(AbstractBaseUser):
         }
 
         requests.post(settings.MAILGUN_SERVER,
-                      auth=("api", settings.MAILGUN_API_KEY),
-                      data=data)
-
-        # """
-        # use to send mail using gmail smtp
-        # """
-        # email = EmailMessage("Email Confirmation", html, to=[self.email])
-        # email.send
+                auth=("api", settings.MAILGUN_API_KEY),
+                data=data)
 
     def generate_password_reset_token(self):
         payload = {
@@ -134,14 +120,8 @@ class User(AbstractBaseUser):
         }
 
         requests.post(settings.MAILGUN_SERVER,
-                      auth=("api", settings.MAILGUN_API_KEY),
-                      data=data)
-
-        # """
-        #       use to send mail using gmail smtp
-        #       """
-        # email = EmailMessage("Reset Password", html, to=[self.email])
-        # email.send
+                auth=("api", settings.MAILGUN_API_KEY),
+                data=data)
 
     def __str__(self):
         return self.email

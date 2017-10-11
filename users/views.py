@@ -1,19 +1,50 @@
 import jwt
+from django.conf import settings
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.hashers import make_password
 from django.http import Http404
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
-# Create your views here.
-from users.forms import *
+from users.models import User
+from .forms import (
+    RegisterForm,
+    LoginForm,
+    PasswordChangeForm,
+    PasswordResetForm,
+    SendPasswordResetEmailForm, ProfileForm)
 
 
-def login_user(request):
+def user_register(request):
+    """
+    Register a user
+    """
+    if request.user.is_authenticated():
+        return redirect('dashboard')
+
+    form = RegisterForm(data=request.POST or None)
+    if request.method == 'POST':
+        if form.is_valid():
+            user = form.save()
+            messages.success(request, "We have sent you confirmation email \
+                Please confirm your account by clicking on the confirmation link \
+                sent to your email.")
+            login(request, user)
+            return redirect('dashboard')
+
+    context = {
+        'form': form
+    }
+    return render(request, 'users/register.html', context)
+
+
+def user_login(request):
+    """
+    Login a user
+    """
     next = request.GET.get('next', None)
     if request.user.is_authenticated():
-        return redirect('/')
+        return redirect('dashboard')
 
     form = LoginForm(data=request.POST or None)
 
@@ -34,45 +65,9 @@ def login_user(request):
                 login(request, user)
                 if next:
                     return redirect(next)
-                return redirect('/')
+                return redirect('dashboard')
 
     return render(request, 'users/login.html', context)
-
-
-@login_required
-def logout_user(request):
-    """
-    Logout a user
-    """
-    logout(request)
-    messages.success(request, "Logged out successfully!")
-    return redirect('login_user')
-
-
-@login_required
-def user_register(request):
-    """
-    Register a user
-    """
-    # if request.user.is_authenticated():
-    #     return redirect('/')
-
-    form = RegisterForm(data=request.POST or None)
-    if request.method == 'POST':
-        if form.is_valid():
-            user = form.save(commit=False)
-            user.password = make_password(form.cleaned_data.get('confirm_password'))
-            messages.success(request, "We have sent you confirmation email \
-                Please confirm your account by clicking on the confirmation link \
-                sent to your email.")
-            user.save()
-            login(request, user)
-            return redirect('/')
-
-    context = {
-        'form': form
-    }
-    return render(request, 'users/register.html', context)
 
 
 def user_email_confirm(request):
@@ -80,7 +75,7 @@ def user_email_confirm(request):
     Confirm user's email
     """
     if request.user.is_authenticated():
-        return redirect('/')
+        return redirect('dashboard')
 
     token = request.GET.get('token')
     if token is None:
@@ -113,19 +108,37 @@ def user_email_confirm(request):
     return redirect('users:login')
 
 
+@login_required
+def user_password_change(request):
+    """
+    Change user password
+    """
+    form = PasswordChangeForm(data=request.POST or None, user=request.user)
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Password changed successfully")
+            return redirect('user_password_change')
+
+    context = {
+        'form': form
+    }
+    return render(request, 'users/change_password.html', context)
+
+
 def user_send_password_reset_email(request):
     """
     Send password reset email
     """
     if request.user.is_authenticated():
-        return redirect('/')
+        return redirect('dashboard')
 
     form = SendPasswordResetEmailForm(data=request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
             form.save()
             messages.success(request, "Password reset email sent. Please check your email for instructions.")
-            return redirect('send_password_reset_email')
+            return redirect('users:send_password_reset_email')
 
     context = {
         'form': form
@@ -138,7 +151,7 @@ def user_password_reset(request):
     Reset user password
     """
     if request.user.is_authenticated():
-        return redirect('/')
+        return redirect('dashboard')
 
     token = request.GET.get('token')
     if token is None:
@@ -167,7 +180,7 @@ def user_password_reset(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Password reset successfully.")
-            return redirect('users:login_user')
+            return redirect('users:login')
 
     context = {
         'form': form
@@ -176,36 +189,33 @@ def user_password_reset(request):
 
 
 @login_required
-def user_password_change(request):
+def user_logout(request):
     """
-    change user password
+    Logout a user
     """
-
-    form = PasswordChangeForm(data=request.POST or None, user=request.user)
-    if request.method == 'POST':
-        if form.is_valid():
-            user = form.save()
-            messages.success(request, 'Password Changed successfully')
-            login(request, user)
-
-    context = {
-        'form': form
-    }
-
-    return render(request, 'users/change_password.html', context)
+    logout(request)
+    messages.success(request, "Logged out successfully!")
+    return redirect('users:login')
 
 
 @login_required
 def user_profile_edit(request):
+    """
+    Edit user profile
+    """
     form = ProfileForm(instance=request.user, data=request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
             form.save()
-            messages.success(request, "profile update.")
-            return redirect('profile_edit')
+            messages.success(request, "Profile updated.")
+            return redirect('users:profile_edit')
 
     context = {
         'form': form
     }
-
     return render(request, 'users/profile_edit.html', context)
+
+
+
+
+
