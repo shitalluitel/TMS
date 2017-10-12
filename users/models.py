@@ -95,8 +95,8 @@ class User(AbstractBaseUser):
         }
 
         requests.post(settings.MAILGUN_SERVER,
-                auth=("api", settings.MAILGUN_API_KEY),
-                data=data)
+                      auth=("api", settings.MAILGUN_API_KEY),
+                      data=data)
 
     def generate_password_reset_token(self):
         payload = {
@@ -120,8 +120,8 @@ class User(AbstractBaseUser):
         }
 
         requests.post(settings.MAILGUN_SERVER,
-                auth=("api", settings.MAILGUN_API_KEY),
-                data=data)
+                      auth=("api", settings.MAILGUN_API_KEY),
+                      data=data)
 
     def __str__(self):
         return self.email

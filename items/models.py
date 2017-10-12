@@ -1,6 +1,6 @@
 from django.db import models
 from units.models import Unit
-from django.contrib.auth.models import User
+from users.models import User
 
 
 # Create your models here.

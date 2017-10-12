@@ -2,7 +2,6 @@ from django import forms
 from django.conf import settings
 from django.contrib.auth import password_validation
 
-# from categories.models import Category
 from .models import User
 
 
@@ -53,8 +52,6 @@ class RegisterForm(forms.ModelForm):
         if commit:
             user.save()
         user.send_confirmation_email()
-        # category = Category(user=user, name='Uncategorized')
-        # category.save()
         return user
 
 

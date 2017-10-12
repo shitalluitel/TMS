@@ -20,7 +20,7 @@ def user_register(request):
     Register a user
     """
     if request.user.is_authenticated():
-        return redirect('dashboard')
+        return redirect('/')
 
     form = RegisterForm(data=request.POST or None)
     if request.method == 'POST':
@@ -30,7 +30,7 @@ def user_register(request):
                 Please confirm your account by clicking on the confirmation link \
                 sent to your email.")
             login(request, user)
-            return redirect('dashboard')
+            return redirect('/')
 
     context = {
         'form': form
@@ -38,13 +38,13 @@ def user_register(request):
     return render(request, 'users/register.html', context)
 
 
-def user_login(request):
+def login_user(request):
     """
     Login a user
     """
     next = request.GET.get('next', None)
     if request.user.is_authenticated():
-        return redirect('dashboard')
+        return redirect('/')
 
     form = LoginForm(data=request.POST or None)
 
@@ -65,7 +65,7 @@ def user_login(request):
                 login(request, user)
                 if next:
                     return redirect(next)
-                return redirect('dashboard')
+                return redirect('/')
 
     return render(request, 'users/login.html', context)
 
@@ -75,7 +75,7 @@ def user_email_confirm(request):
     Confirm user's email
     """
     if request.user.is_authenticated():
-        return redirect('dashboard')
+        return redirect('/')
 
     token = request.GET.get('token')
     if token is None:
@@ -105,7 +105,7 @@ def user_email_confirm(request):
         user.is_confirmed = True
         user.save()
         messages.success(request, "Email confirmed.")
-    return redirect('users:login')
+    return redirect('login_user')
 
 
 @login_required
@@ -131,7 +131,7 @@ def user_send_password_reset_email(request):
     Send password reset email
     """
     if request.user.is_authenticated():
-        return redirect('dashboard')
+        return redirect('/')
 
     form = SendPasswordResetEmailForm(data=request.POST or None)
     if request.method == 'POST':
@@ -151,7 +151,7 @@ def user_password_reset(request):
     Reset user password
     """
     if request.user.is_authenticated():
-        return redirect('dashboard')
+        return redirect('/')
 
     token = request.GET.get('token')
     if token is None:
@@ -180,7 +180,7 @@ def user_password_reset(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Password reset successfully.")
-            return redirect('users:login')
+            return redirect('login_user')
 
     context = {
         'form': form
@@ -189,13 +189,13 @@ def user_password_reset(request):
 
 
 @login_required
-def user_logout(request):
+def logout_user(request):
     """
     Logout a user
     """
     logout(request)
     messages.success(request, "Logged out successfully!")
-    return redirect('users:login')
+    return redirect('login_user')
 
 
 @login_required
