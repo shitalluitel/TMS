@@ -82,27 +82,27 @@ WSGI_APPLICATION = 'gmms.wsgi.application'
 # }
 #
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'luitelgmms',
-#         'USER': 'shital1',
-#         'PASSWORD': 'luitel@dell.com',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7jvp0713qcp3k',
-        'USER': 'iisjredvzzivlc',
-        'PASSWORD': '79ff5056c77b15acfaeaa9536c73a5cecca656dc411481f71163ae4a4d783dae',
-        'HOST': 'ec2-54-83-58-17.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'luitelgmms',
+        'USER': 'shital1',
+        'PASSWORD': 'luitel@dell.com',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd7jvp0713qcp3k',
+#         'USER': 'iisjredvzzivlc',
+#         'PASSWORD': '79ff5056c77b15acfaeaa9536c73a5cecca656dc411481f71163ae4a4d783dae',
+#         'HOST': 'ec2-54-83-58-17.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

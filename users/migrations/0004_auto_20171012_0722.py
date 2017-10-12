@@ -9,7 +9,7 @@ from django.db import migrations
 
 def load_user(apps, schema_editor):
     User = apps.get_model('users', 'User')
-    user_data = User(pk=1, username='ctalluitel', first_name='Shital', last_name='Luitel',
+    user_data = User(pk=1, username='ctalluitel', email='ctalluitel@gmail.com', first_name='Shital', last_name='Luitel',
                      password=make_password('shital1'),
                      is_confirmed=True, created_at=datetime.today())
     user_data.save()
