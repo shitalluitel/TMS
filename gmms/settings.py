@@ -24,7 +24,7 @@ SECRET_KEY = 'w8)(!h$^$cno&tn_@$u#-v=7qp7i+w&(v=e9actc%@3)6*x4=*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', '192.168.100.7', 'lupim.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '192.168.1.102', 'lupim.herokuapp.com']
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'items',
     'units',
     'users',
+    'customers',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +86,7 @@ WSGI_APPLICATION = 'gmms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'luitelgmms',
+        'NAME': 'gssmlupim',
         'USER': 'shital1',
         'PASSWORD': 'luitel@dell.com',
         'HOST': 'localhost',

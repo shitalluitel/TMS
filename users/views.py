@@ -20,7 +20,7 @@ def user_register(request):
     Register a user
     """
     if request.user.is_authenticated():
-        return redirect('/')
+        return redirect('home_page')
 
     form = RegisterForm(data=request.POST or None)
     if request.method == 'POST':
@@ -30,7 +30,7 @@ def user_register(request):
                 Please confirm your account by clicking on the confirmation link \
                 sent to your email.")
             login(request, user)
-            return redirect('/')
+            return redirect('home_page')
 
     context = {
         'form': form
@@ -208,7 +208,7 @@ def user_profile_edit(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Profile updated.")
-            return redirect('users:profile_edit')
+            return redirect('profile_edit')
 
     context = {
         'form': form

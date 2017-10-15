@@ -1,0 +1,58 @@
+{% extends 'base_temp.html' %}
+
+{% block content %}
+    <div class="delete-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <p class="lead text-center">Are you sure, you want to delete transaction
+                        <strong>{{ transaction.item.name }}</strong> ?
+
+                    </p>
+
+                    <form method="POST" class="form-horizontal">
+
+                        {% csrf_token %}
+
+                        <div class="form-group">
+
+                            <div class="col-md-offset-3">
+
+                                <div class="col-md-4">
+                                    <button type="submit"
+                                            class="btn btn-danger btn-block">Delete
+                                    </button>
+                                </div>
+                                <div class="visible-xs visible-sm">
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="{% url 'transaction_list' %}" class="btn btn-default btn-block">Cancel</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer style="background-color: #337ab7;" id="#aboutus">
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-center text-white"> Built With <i class="fa fa-heart text-danger"></i> In
+                        Biratnagar
+                    </p>
+                    <p class="text-center text-white">&copy; CopyRight <strong>Spyders</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

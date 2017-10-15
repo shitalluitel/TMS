@@ -2,16 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002ddf32-a8b1-4dfc-9276-7864a8dfaf2e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/0002_auto_20171013_0757.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/0003_auto_20171013_0758.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/0004_auto_20171013_0801.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/0005_auto_20171013_0804.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/0006_auto_20171013_1920.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customers/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/submit_btn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/transaction/create_customer_js.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/customer/customer_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/customer/customer_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/customer/delete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/transactions/delete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/transactions/error_msg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/transactions/migrations/0006_auto_20171013_0756.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/transactions/migrations/0007_transaction_created_hour.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/transactions/migrations/0008_auto_20171014_1345.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/transactions/migrations/0009_auto_20171014_1518.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/transactions/migrations/0010_auto_20171014_1534.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/transactions/migrations/0011_auto_20171015_1439.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/d1650022-de3d-4ba4-810f-fe5d5de88342/_metadata_/metadata_i.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all.json" afterPath="$PROJECT_DIR$/all.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmms/settings.py" afterPath="$PROJECT_DIR$/gmms/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/login.css" afterPath="$PROJECT_DIR$/static/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmms/urls.py" afterPath="$PROJECT_DIR$/gmms/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/items/forms.py" afterPath="$PROJECT_DIR$/items/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/items/views.py" afterPath="$PROJECT_DIR$/items/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/base/main_style.css" afterPath="$PROJECT_DIR$/static/base/main_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/transaction/transaction_js.js" afterPath="$PROJECT_DIR$/static/js/transaction/transaction_js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_temp.html" afterPath="$PROJECT_DIR$/templates/base_temp.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/items/delete.html" afterPath="$PROJECT_DIR$/templates/items/delete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/items/item_edit.html" afterPath="$PROJECT_DIR$/templates/items/item_edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/items/item_list.html" afterPath="$PROJECT_DIR$/templates/items/item_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/transactions/transaction_edit.html" afterPath="$PROJECT_DIR$/templates/transactions/transaction_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/transactions/transaction_list.html" afterPath="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/units/delete.html" afterPath="$PROJECT_DIR$/templates/units/delete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/units/unit_edit.html" afterPath="$PROJECT_DIR$/templates/units/unit_edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/units/unit_list.html" afterPath="$PROJECT_DIR$/templates/units/unit_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/users/login.html" afterPath="$PROJECT_DIR$/templates/users/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/users/profile_edit.html" afterPath="$PROJECT_DIR$/templates/users/profile_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/forms.py" afterPath="$PROJECT_DIR$/transactions/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/models.py" afterPath="$PROJECT_DIR$/transactions/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/templatetags/datefilter.py" afterPath="$PROJECT_DIR$/transactions/templatetags/datefilter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/urls.py" afterPath="$PROJECT_DIR$/transactions/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/views.py" afterPath="$PROJECT_DIR$/transactions/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py" afterPath="$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/urls.py" afterPath="$PROJECT_DIR$/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +94,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="luitelgmms@localhost" />
+        <option name="myItemId" value="gssmlupim@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -49,21 +104,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="luitelgmms@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="luitelgmms@localhost" />
+        <option name="myItemId" value="gssmlupim@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
@@ -78,105 +119,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/views.py">
+      <file leaf-file-name="unit_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/units/unit_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="107" column="31" lean-forward="false" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="362">
+              <caret line="122" column="59" lean-forward="false" selection-start-line="122" selection-start-column="59" selection-end-line="122" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/items/item_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="132" column="59" lean-forward="false" selection-start-line="132" selection-start-column="59" selection-end-line="132" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/customer/customer_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/models.py">
+        <entry file="file://$PROJECT_DIR$/customers/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="59" column="57" lean-forward="false" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <element signature="e#6682#7364#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="luitelgmms.public.users" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e04d7b2f/d1650022-de3d-4ba4-810f-fe5d5de88342/luitelgmms.public.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0004_auto_20171012_0722.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py">
+      <file leaf-file-name="transaction_edit.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="80" lean-forward="false" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
-              <folding>
-                <element signature="e#73#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmms/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unit_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/units/unit_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="234" column="59" lean-forward="false" selection-start-line="234" selection-start-column="59" selection-end-line="234" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -187,10 +174,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -204,7 +191,6 @@
       <find>units</find>
       <find>unit</find>
       <find>x</find>
-      <find>item</find>
       <find>LOGI</find>
       <find>Item</find>
       <find>add</find>
@@ -213,6 +199,11 @@
       <find>log</find>
       <find>dashboard</find>
       <find>category</find>
+      <find>nepal</find>
+      <find>-list</find>
+      <find>col-md-6</find>
+      <find>name</find>
+      <find>item</find>
     </findStrings>
     <replaceStrings>
       <replace>units</replace>
@@ -222,6 +213,9 @@
       <replace>Transaction</replace>
       <replace>transaction</replace>
       <replace>/</replace>
+      <replace>customer</replace>
+      <replace>-list-alt</replace>
+      <replace>col-md-8</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -230,57 +224,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/units/check.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/unit/unit_style.css" />
-        <option value="$PROJECT_DIR$/templates/users/profile_edit.html" />
-        <option value="$PROJECT_DIR$/templates/users/register.html" />
-        <option value="$PROJECT_DIR$/templates/users/send_password_reset_email.html" />
-        <option value="$PROJECT_DIR$/templates/users/change_password.html" />
-        <option value="$PROJECT_DIR$/units/urls.py" />
-        <option value="$PROJECT_DIR$/units/forms.py" />
-        <option value="$PROJECT_DIR$/templates/item_list.html" />
-        <option value="$PROJECT_DIR$/units/views.py" />
-        <option value="$PROJECT_DIR$/items/forms.py" />
-        <option value="$PROJECT_DIR$/templates/transactions/transaction_create.html" />
-        <option value="$PROJECT_DIR$/items/urls.py" />
-        <option value="$PROJECT_DIR$/items/views.py" />
-        <option value="$PROJECT_DIR$/transactions/forms.py" />
-        <option value="$PROJECT_DIR$/templates/transactions/transaction_edit.html" />
         <option value="$PROJECT_DIR$/static/css/transaction.css" />
         <option value="$PROJECT_DIR$/transactions/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/transactions/templatetags/datefilter.py" />
-        <option value="$PROJECT_DIR$/transactions/urls.py" />
-        <option value="$PROJECT_DIR$/static/js/transaction/transaction_js.js" />
-        <option value="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
-        <option value="$PROJECT_DIR$/transactions/views.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/gmms/wsgi.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/static/base/main_style.css" />
-        <option value="$PROJECT_DIR$/templates/users/login.html" />
         <option value="$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py" />
-        <option value="$PROJECT_DIR$/gmms/urls.py" />
-        <option value="$PROJECT_DIR$/users/urls.py" />
-        <option value="$PROJECT_DIR$/templates/base_temp.html" />
-        <option value="$PROJECT_DIR$/units/models.py" />
-        <option value="$PROJECT_DIR$/items/models.py" />
-        <option value="$PROJECT_DIR$/transactions/models.py" />
-        <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/users/forms.py" />
         <option value="$PROJECT_DIR$/items/migrations/0002_auto_20171012_0644.py" />
         <option value="$PROJECT_DIR$/all.json" />
         <option value="$PROJECT_DIR$/users/migrations/0002_auto_20171012_0709.py" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/items/models.py" />
+        <option value="$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
+        <option value="$PROJECT_DIR$/items/forms.py" />
+        <option value="$PROJECT_DIR$/units/models.py" />
+        <option value="$PROJECT_DIR$/users/urls.py" />
+        <option value="$PROJECT_DIR$/templates/customer/transaction_edit.html" />
+        <option value="$PROJECT_DIR$/gmms/urls.py" />
+        <option value="$PROJECT_DIR$/customers/urls.py" />
+        <option value="$PROJECT_DIR$/customers/views.py" />
+        <option value="$PROJECT_DIR$/customers/forms.py" />
+        <option value="$PROJECT_DIR$/templates/base_temp.html" />
+        <option value="$PROJECT_DIR$/templates/users/profile_edit.html" />
+        <option value="$PROJECT_DIR$/transactions/forms.py" />
+        <option value="$PROJECT_DIR$/transactions/templatetags/datefilter.py" />
+        <option value="$PROJECT_DIR$/items/views.py" />
+        <option value="$PROJECT_DIR$/transactions/urls.py" />
+        <option value="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
+        <option value="$PROJECT_DIR$/static/js/transaction/transaction_js.js" />
+        <option value="$PROJECT_DIR$/templates/transactions/error_msg.html" />
+        <option value="$PROJECT_DIR$/templates/transactions/delete.html" />
+        <option value="$PROJECT_DIR$/static/base/main_style.css" />
         <option value="$PROJECT_DIR$/gmms/settings.py" />
-        <option value="$PROJECT_DIR$/templates/items/item_list.html" />
-        <option value="$PROJECT_DIR$/templates/items/item_edit.html" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/transactions/views.py" />
+        <option value="$PROJECT_DIR$/templates/users/login.html" />
         <option value="$PROJECT_DIR$/templates/items/delete.html" />
         <option value="$PROJECT_DIR$/templates/units/delete.html" />
-        <option value="$PROJECT_DIR$/templates/units/unit_edit.html" />
+        <option value="$PROJECT_DIR$/templates/customer/delete.html" />
         <option value="$PROJECT_DIR$/templates/units/unit_list.html" />
-        <option value="$PROJECT_DIR$/static/css/login.css" />
-        <option value="$PROJECT_DIR$/users/models.py" />
-        <option value="$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py" />
+        <option value="$PROJECT_DIR$/templates/items/item_list.html" />
+        <option value="$PROJECT_DIR$/templates/customer/customer_list.html" />
+        <option value="$PROJECT_DIR$/customers/models.py" />
+        <option value="$PROJECT_DIR$/transactions/models.py" />
+        <option value="$PROJECT_DIR$/static/js/transaction/create_customer_js.js" />
+        <option value="$PROJECT_DIR$/static/js/submit_btn.js" />
+        <option value="$PROJECT_DIR$/templates/customer/customer_edit.html" />
+        <option value="$PROJECT_DIR$/templates/items/item_edit.html" />
+        <option value="$PROJECT_DIR$/templates/units/unit_edit.html" />
+        <option value="$PROJECT_DIR$/templates/transactions/transaction_edit.html" />
       </list>
     </option>
   </component>
@@ -314,6 +308,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,7 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,17 +345,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="transactions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,11 +365,13 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;models&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;vie&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;view&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;bas&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;tra&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction/transaction_js.js&#10;transa&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction/transaction_js.js&#10;users/vi&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;css&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_list.html&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;list&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_list.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;trans&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;settin&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;units/m&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;mo&#9;FILE&#9;file:///home/shital/gmms/items/models.py&#10;mod&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;form&#9;FILE&#9;file:///home/shital/gmms/units/forms.py" />
+    <property name="SearchEverywhereHistoryKey" value="models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;urls&#9;null&#9;null&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;view&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;vie&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;bas&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;users/vi&#9;FILE&#9;file:///home/shital/gmms/users/views.py&#10;css&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/templates/transactions" />
       <recent name="$PROJECT_DIR$/templates/items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -693,7 +689,7 @@
     <frame x="0" y="24" width="1360" height="689" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22526637" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2366819" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28419182" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952815" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -701,7 +697,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -723,8 +719,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56624603" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2366819" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952815" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -750,91 +746,149 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/transaction/transaction_js.js">
+    <entry file="file://$PROJECT_DIR$/customers/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="126" lean-forward="false" selection-start-line="37" selection-start-column="126" selection-end-line="37" selection-end-column="126" />
+        <state relative-caret-position="162">
+          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
           <folding>
-            <element signature="e#0#57#0" expanded="false" />
-            <element signature="e#2397#3029#0" expanded="false" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_list.html">
+    <entry file="file://$PROJECT_DIR$/customers/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="95" lean-forward="false" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+        <state relative-caret-position="1505">
+          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="85" lean-forward="false" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/urls.py">
+    <entry file="file://$PROJECT_DIR$/units/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/items/forms.py">
+    <entry file="file://$PROJECT_DIR$/customers/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="83">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="e#0#24#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/templates/users/change_password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/transactions/migrations/0006_auto_20171013_0756.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="-21">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/units/migrations/0001_initial.py">
+    <entry file="file://$PROJECT_DIR$/transactions/migrations/0008_auto_20171014_1338.py" />
+    <entry file="file://$PROJECT_DIR$/transactions/migrations/0007_transaction_created_hour.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/migrations/0010_auto_20171014_1515.py" />
+    <entry file="file://$PROJECT_DIR$/transactions/migrations/0009_auto_20171014_1514.py" />
+    <entry file="file://$PROJECT_DIR$/transactions/migrations/0008_auto_20171014_1345.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/items/views.py">
+    <entry file="file://$PROJECT_DIR$/transactions/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmms/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/templates/users/profile_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/units/views.py">
+    <entry file="file://$PROJECT_DIR$/items/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="88" column="11" lean-forward="false" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4086">
+          <caret line="227" column="63" lean-forward="false" selection-start-line="227" selection-start-column="63" selection-end-line="227" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/templatetags/datefilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="43" column="100" lean-forward="false" selection-start-line="43" selection-start-column="100" selection-end-line="43" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/transaction/transaction_js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
@@ -842,315 +896,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/units/migrations/0002_unit_user.py">
+    <entry file="file://$PROJECT_DIR$/templates/transactions/error_msg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/units/migrations/0003_auto_20170928_0658.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/units/migrations/0004_auto_20170928_0715.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py" />
-    <entry file="file://$PROJECT_DIR$/templates/users/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#2029#2209#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0002_auto_20170112_1325.py" />
-    <entry file="file://$PROJECT_DIR$/gmms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="470">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/units/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/items/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="104" column="24" lean-forward="false" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="107" column="31" lean-forward="false" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/units/migrations/0005_auto_20170928_1439.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/items/migrations/0002_auto_20171012_0644.py">
+    <entry file="file://$PROJECT_DIR$/templates/transactions/delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/d1650022-de3d-4ba4-810f-fe5d5de88342/luitelgmms.public.unit">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/d1650022-de3d-4ba4-810f-fe5d5de88342/luitelgmms.public.transactions_transaction">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/d1650022-de3d-4ba4-810f-fe5d5de88342/luitelgmms.public.auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/d1650022-de3d-4ba4-810f-fe5d5de88342/luitelgmms.public.item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#6682#7364#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0003_auto_20171012_0718.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0002_auto_20171012_0709.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="e#73#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/items/item_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/items/item_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/items/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/units/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="78" lean-forward="false" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/units/unit_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/base/main_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/units/unit_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="59" column="57" lean-forward="false" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1163,26 +922,271 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/d1650022-de3d-4ba4-810f-fe5d5de88342/luitelgmms.public.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.item">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py">
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.unit">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/items/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/items/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="80" lean-forward="false" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#73#112#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/units/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/users/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/base/main_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/items/item_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="e#867#2619#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/customer/customer_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="79" column="22" lean-forward="false" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+          <folding>
+            <element signature="e#908#3416#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/units/unit_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="e#868#2474#0#HTML" expanded="false" />
+            <element signature="e#1024#1042#0#HTML" expanded="true" />
+            <element signature="e#1085#1103#0#HTML" expanded="true" />
+            <element signature="e#1146#1164#0#HTML" expanded="true" />
+            <element signature="e#1213#1231#0#HTML" expanded="true" />
+            <element signature="e#1882#1888#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.customer">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.transactions_transaction">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/submit_btn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/transaction/create_customer_js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/customer/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="85" lean-forward="false" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customers/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/customer/customer_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/items/item_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="132" column="59" lean-forward="false" selection-start-line="132" selection-start-column="59" selection-end-line="132" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/units/unit_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="122" column="59" lean-forward="false" selection-start-line="122" selection-start-column="59" selection-end-line="122" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="234" column="59" lean-forward="false" selection-start-line="234" selection-start-column="59" selection-end-line="234" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

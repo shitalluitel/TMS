@@ -1,17 +1,18 @@
 {% extends    'base_temp.html' %}
+{% load staticfiles %}
 
 {% block breadcrumb %}
     <div class="container-fluid breadcrumb-style">
         <div class="page-header">
             <h3>
                 Unit
-                <small> | Add</small>
+                <small> | {% if form.instance.id %} Edit {% else %} Add {% endif %}</small>
             </h3>
         </div>
         <ol class="breadcrumb">
             <li><a href="{% url 'home_page' %}">Home</a></li>
             <li><a href="{% url 'unit_list' %}">Unit</a></li>
-            <li>New</li>
+            <li>{% if form.instance.id %} Edit {% else %} New {% endif %}</li>
         </ol>
     </div>
 {% endblock %}
@@ -118,4 +119,6 @@
     </footer>
 {% endblock %}
 
-
+{% block extra_script %}
+    <script src="{% static 'js/submit_btn.js' %}"></script>
+{% endblock %}

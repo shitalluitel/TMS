@@ -1,5 +1,6 @@
+import pytz
 from django import template
-from datetime import datetime
+import datetime
 import dateutil.relativedelta
 from datetime import date
 
@@ -13,3 +14,13 @@ def datefilter(value):
         return_date = today_date - dateutil.relativedelta.relativedelta(months=value)
         return str(return_date)
     return str(today_date)
+
+
+@register.filter
+def hour_limit(hour):
+    timediff = datetime.datetime.now(pytz.utc) - hour
+    c_time = timediff.total_seconds() / 3600
+    if c_time < 24:
+        return True
+    else:
+        return False

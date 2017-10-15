@@ -1,19 +1,5 @@
 [
 {
-  "model": "users.user",
-  "pk": 1,
-  "fields": {
-    "password": "shital.87",
-    "username": "shital ",
-    "email": "ctalluitel@gmail.com",
-    "first_name": "Shital",
-    "last_name": "Luitel",
-    "is_confirmed": true,
-    "created_at": "2017-10-11T10:39:15.265Z",
-    "updated_at": "2017-10-11T10:39:15.265Z"
-  }
-},
-{
   "model": "units.unit",
   "pk": 1,
   "fields": {

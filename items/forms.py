@@ -11,7 +11,7 @@ class ItemForm(forms.ModelForm):
 
     unit_price = forms.DecimalField(
         label='Unit Price',
-        widget=forms.DateInput(attrs={'class': 'form-control', 'placeholder': '6'})
+        widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': '6'})
     )
 
     # this is used to create select box

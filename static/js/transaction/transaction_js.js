@@ -3,6 +3,29 @@
  */
 var item_price = 0;
 
+$(document).ready(function () {
+    var item_list = $(".item-list").val();
+    // alert(item_list);
+    if (item_list) {
+        $.ajax({
+            type: 'GET',
+            method: 'GET',
+            url: '/items/' + item_list + '/get/unit_price',
+            error: function () {
+                console.log("error");
+            },
+            success: function (data) {
+                item_price = data;
+                if (item_quantity.length != 0) {
+                    var total = item_price * item_quantity;
+                    $('.total-cost').val(total);
+                    // console.log('Total: ' + total)
+                }
+            },
+        });
+    }
+});
+
 (function ($) {
     $.fn.filter_select = function () {
         if ($('#filter option:selected').text() == 'Date') {
@@ -21,24 +44,25 @@ var item_price = 0;
 $('body').on('change', '.item-list', function () {
     var item_list = $(this).val();
     var item_quantity = $('.item-quantity').val();
-    $.ajax({
-        type: 'GET',
-        method: 'GET',
-        url: '/items/' + item_list + '/get/unit_price',
-        error: function () {
-            console.log("error");
-        },
-        success: function (data) {
-            item_price = data;
-            // console.log('price: ' + data);
-            // console.log("Length: " + item_quantity.toString().length);
-            if (item_quantity.length != 0) {
-                var total = item_price * item_quantity;
-                $('.total-cost').val(total);
-                // console.log('Total: ' + total)
-            }
-        },
-    });
+    if (item_list) {
+        $.ajax({
+            type: 'GET',
+            method: 'GET',
+            url: '/items/' + item_list + '/get/unit_price',
+            error: function () {
+                console.log("error");
+            },
+            success: function (data) {
+                item_price = data;
+                if (item_quantity.length != 0) {
+                    var total = item_price * item_quantity;
+                    $('.total-cost').val(total);
+                }
+            },
+        });
+    }else {
+        item_price = 1;
+    }
 });
 
 $('body').on('input', '.item-quantity', function () {
@@ -59,7 +83,7 @@ $(document).ready(function () {
             if ($(this).text() == 'Date')
                 $(this).attr("selected", "selected");
         });
-    }else if (window.location.href.indexOf("&item_name") > -1) {
+    } else if (window.location.href.indexOf("&item_name") > -1) {
         $("select option").each(function () {
             if ($(this).text() == 'Item Name')
                 $(this).attr("selected", "selected");
@@ -67,8 +91,9 @@ $(document).ready(function () {
     }
     $(document).filter_select();
     $('.datepicker').nepaliDatePicker();
+
     $('.created-date').each(function () {
-       $(this).text(AD2BS($(this).text()));
+        $(this).text(AD2BS($(this).text()));
     });
 });
 

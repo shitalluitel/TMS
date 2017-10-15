@@ -8,8 +8,9 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import ItemForm
 from django.utils import timezone
 from .models import Item
-import json
-from django.core import serializers
+
+
+# from units.forms import UnitForm
 
 
 # Create your views here.
@@ -19,17 +20,24 @@ def item_create(request):
     initial_data = {
         'created_date': timezone.now().date(),
     }
-    form = ItemForm(request.POST or None, initial=initial_data)
+    # unit_form = UnitForm(request.POST or None, initial=initial_data)
+    item_form = ItemForm(request.POST or None, initial=initial_data)
     if request.method == 'POST':
-        if form.is_valid():
-            item = form.save(commit=False)
+        if item_form.is_valid():
+            item = item_form.save(commit=False)
             item.user = request.user
+            # if unit_form.is_valid():
+            #     unit = unit_form.save(commit=False)
+            #     unit.user = request.user
+            #     unit.save()
+            #     item.unit_id = unit.pk
             item.save()
             messages.success(request, "Expense added.")
             return redirect("item_create")
 
     context = {
-        'form': form
+        'form': item_form,
+        # 'unit_form': unit_form
     }
     return render(request, 'items/item_edit.html', context)
 
@@ -53,9 +61,9 @@ def item_edit(request, pk):
 
 @login_required
 def item_list(request):
-    item_list = Item.objects.all().order_by("name")
+    item_list_data = Item.objects.all().order_by("name")
     per_page = 10
-    paginator = Paginator(item_list, per_page)
+    paginator = Paginator(item_list_data, per_page)
     page = request.GET.get('page')
 
     try:
@@ -77,7 +85,7 @@ def item_delete(request, pk):
 
     if request.method == 'POST':
         item.delete()
-        # messages.success(request, "Transaction %s deleted." % item.title)
+        # messages.success(request, "Transaction %s deleted." % (item.title))
         return redirect('item_list')
 
     context = {

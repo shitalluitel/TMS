@@ -6,13 +6,13 @@
         <div class="page-header">
             <h3>
                 Transactions
-                <small> | Add</small>
+                <small> | {% if form.instance.id %} Edit {% else %} Add {% endif %} </small>
             </h3>
         </div>
         <ol class="breadcrumb">
             <li><a href="{% url 'transaction_create' %}">Home</a></li>
             <li><a href="{% url 'transaction_list' %}">Transactions</a></li>
-            <li>New</li>
+            <li>{% if form.instance.id %} Edit {% else %} New {% endif %}</li>
         </ol>
     </div>
 {% endblock %}
@@ -54,26 +54,107 @@
 
                     {% csrf_token %}
                     <div class="row">
-                        <div class=" col-xs-12 col-md-offset-1 col-md-11">
+                        <div class=" col-xs-12 col-md-offset-2 col-md-8">
 
                             <div class="form-horizontal">
 
                                 {#                                    {% for form in form.visible_forms %}#}
-                                <div class="form-group {% if form.customer_name.errors %}has-error{% endif %}">
-                                    <label class="col-md-3 control-label">{{ form.customer_name.label }}</label>
-                                    <div class="col-md-6">
-                                        {{ form.customer_name }}
-                                        {% if form.customer_name.errors %}
-                                            <div class="help-block">
-                                                {{ form.customer_name.errors }}
-                                            </div>
-                                        {% endif %}
+                                {% if form.instance.id %}
+                                    <div class="form-group {% if form.customer.errors %}has-error{% endif %}">
+                                        <div class="col-md-3">
+                                            <label class="control-label text-left">{{ form.customer.label }}</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            {{ form.customer }}
+                                            {% if form.customer.errors %}
+                                                <div class="help-block">
+                                                    {{ form.customer.errors }}
+                                                </div>
+                                            {% endif %}
+                                        </div>
                                     </div>
-                                </div>
+                                {% else %}
+                                    <div id="customer-form" class="hide">
+                                        <div class="form-group {% if customer_form.name.errors %}has-error{% endif %}">
+                                            <div class="col-md-3">
+                                                <label class="control-label text-left">Customer {{ customer_form.name.label }}</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                {{ customer_form.name }}
+                                                {% if customer_form.name.errors %}
+                                                    <div class="help-block">
+                                                        {{ customer_form.name.errors }}
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group {% if customer_form.address.errors %}has-error{% endif %}">
+                                            <div class="col-md-3">
+                                                <label class="control-label text-left">{{ customer_form.address.label }}</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                {{ customer_form.address }}
+                                                {% if customer_form.address.errors %}
+                                                    <div class="help-block">
+                                                        {{ customer_form.address.errors }}
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group {% if customer_form.phone_number.errors %}has-error{% endif %}">
+                                            <div class="col-md-3">
+                                                <label class="control-label text-left">{{ customer_form.phone_number.label }}</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    {{ customer_form.phone_number }}
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-warning" id="cancle-customer"
+                                                                type="button">Cancle</button>
+                                                    </span>
+                                                    {% if customer_form.phone_number.errors %}
+                                                        <div class="help-block">
+                                                            {{ customer_form.phone_number.errors }}
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="customer-list" class="show">
+                                        <div class="form-group {% if form.customer.errors %}has-error{% endif %}">
+                                            <div class="col-md-3">
+                                                <label class="control-label text-left">{{ form.customer.label }}</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    {{ form.customer }}
+                                                    <span class="input-group-btn">
+                                                    <button class="btn btn-secondary" id="create-customer"
+                                                            type="button">Create</button>
+                                                </span>
+                                                    {% if form.customer.errors %}
+                                                        <div class="help-block">
+                                                            {{ form.customer.errors }}
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                {% endif %}
+
 
                                 <div class="form-group {% if form.item.errors %}has-error{% endif %}">
-                                    <label class="col-md-3 control-label">{{ form.item.label }}</label>
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
+                                        <label class="control-label text-left">{{ form.item.label }}</label>
+                                    </div>
+                                    <div class="col-md-8">
                                         {{ form.item }}
                                         {% if form.item.errors %}
                                             <div class="help-block">
@@ -84,8 +165,10 @@
                                 </div>
 
                                 <div class="form-group {% if form.quantity.errors %}has-error{% endif %}">
-                                    <label class="col-md-3 control-label">{{ form.quantity.label }}</label>
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
+                                        <label class="control-label text-left">{{ form.quantity.label }}</label>
+                                    </div>
+                                    <div class="col-md-8">
                                         {{ form.quantity }}
                                         {% if form.quantity.errors %}
                                             <div class="help-block">
@@ -96,15 +179,18 @@
                                 </div>
 
                                 <div class="form-group ">
-                                    <label class="col-md-3 control-label">Total</label>
-                                    <div class="col-md-6">
-                                        <input class="form-control total-cost" disabled>
+                                    <div class="col-md-3">
+                                        <label class="control-label text-left">{{ form.total_price.label }}</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        {#                                        <input class="form-control total-cost" disabled>#}
+                                        {{ form.total_price }}
                                     </div>
                                 </div>
                                 {#                                    {% endfor %}#}
 
                                 <div class="form-group">
-                                    <div class="col-md-6 col-md-offset-3">
+                                    <div class="col-md-8 col-md-offset-3">
                                         <button type="submit" name="submit" class="btn btn-primary">Submit
                                         </button>
                                     </div>
@@ -138,8 +224,15 @@
     </footer>
 {% endblock %}
 
+{% block extra_stylesheets %}
+    <link rel="stylesheet" href="{% static 'nepali_datepicker/nepali.datepicker.v2.2.min.css' %}">
+{% endblock %}
+
 {% block extra_script %}
+    <script src="{% static 'nepali_datepicker/nepali.datepicker.v2.2.min.js' %}"></script>
     <script src="{% static 'js/transaction/transaction_js.js' %}"></script>
+    <script src="{% static 'js/transaction/create_customer_js.js' %}"></script>
+    <script src="{% static 'js/submit_btn.js' %}"></script>
 {% endblock %}
 
 

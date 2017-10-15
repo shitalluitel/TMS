@@ -31,35 +31,72 @@
                         class="text text-success">Home</span></a>
             </div>
             <div class="collapse navbar-collapse " id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#">Transaction
+                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#"> <span><i
+                                class="fa fa-group">&nbsp;</i></span>Customer
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url 'transaction_create' %}"><span><i class="fa fa-plus"></i></span>  Add</a></li>
-                            <li><a href="{% url 'transaction_list' %}"><span><i class="fa fa-list"></i></span>  List</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#">Unit
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{% url 'unit_create' %}"><span><i class="fa fa-plus">&nbsp;</i></span>Add</a></li>
-                            <li><a href="{% url 'unit_list' %}"><span><i class="fa fa-list">&nbsp;</i></span>List</a></li>
+                            <li><a href="{% url 'customer_create' %}"><span><i class="fa fa-plus"></i></span> Add</a>
+                            </li>
+                            <li><a href="{% url 'customer_list' %}"><span><i class="fa fa-list-alt"></i></span> List</a>
+                            </li>
+                            <li><a href="{% url 'customer_list' %}?trash=True"><span><i class="fa fa-list-alt"></i></span> Trash</a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#">Item
+                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#"> <span><i
+                                class="fa fa-money">&nbsp;</i></span>Transaction
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url 'item_create' %}"><span><i class="fa fa-plus">&nbsp;</i></span>Add</a></li>
-                            <li><a href="{% url 'item_list' %}"><span><i class="fa fa-list">&nbsp;</i></span>List</a></li>
+                            <li><a href="{% url 'transaction_create' %}"><span><i class="fa fa-plus"></i></span> Add</a>
+                            </li>
+                            <li><a href="{% url 'transaction_list' %}"><span><i class="fa fa-list-alt"></i></span> List</a>
+                            </li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#"> <span><i
+                                class="fa fa-balance-scale">&nbsp;</i></span>Unit
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'unit_create' %}"><span><i class="fa fa-plus">&nbsp;</i></span>Add</a>
+                            </li>
+                            <li><a href="{% url 'unit_list' %}"><span><i
+                                    class="fa fa-list-alt">&nbsp;</i></span>List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#"> <span><i
+                                class="fa fa-shopping-cart">&nbsp;</i></span>Item
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'item_create' %}"><span><i class="fa fa-plus">&nbsp;</i></span>Add</a>
+                            </li>
+                            <li><a href="{% url 'item_list' %}"><span><i class="fa fa-list-alt-alt">&nbsp;</i></span>List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="text-success" data-toggle="collapse" data-target=".navbar-collapse"
-                           href="{% url 'logout_user' %}">LogOut</a>
+                        <a class="dropdown-toggle text-success" data-toggle="dropdown" href="#"><span><i
+                                class="fa fa-user-circle">&nbsp;</i></span>{{ user.username }}
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="text-success" href="{% url 'logout_user' %}"> <span><i class="fa fa-sign-out">&nbsp;</i></span>LogOut</a>
+                            </li>
+                            <li><a class="text-success" href="{% url 'user_password_change' %}"> <span><i class="fa fa-edit">&nbsp;</i></span>Change Password</a>
+                            </li>
+                            <li><a href="{% url 'profile_edit' %}"><span><i class="fa fa-user">&nbsp;</i></span>Profile</a>
+                            </li>
+
+                        </ul>
+
                     </li>
                 </ul>
             </div>

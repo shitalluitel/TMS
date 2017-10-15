@@ -1,0 +1,39 @@
+{% extends 'base_temp.html' %}
+
+{% block content %}
+    <br><br><br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+
+                <p class="lead text-center">You have crossed your time limit. You are unable to
+                    {% if transaction.id %} edit  {% else %} delete {% endif %}this
+                    transaction.</p>
+
+
+                <div class="col-md-offset-4 col-md-4">
+                    <a href="{% url 'transaction_list' %}" class="btn btn-default btn-block"> Cancel</a>
+                </div>
+
+                <br><br><br><br><br><br>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer style="background-color: #337ab7;" id="#aboutus">
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-center text-white"> Built With <i class="fa fa-heart text-danger"></i> In
+                        Biratnagar
+                    </p>
+                    <p class="text-center text-white">&copy; CopyRight <strong>Spyders</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
