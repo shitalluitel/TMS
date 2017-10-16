@@ -20,7 +20,7 @@ def user_register(request):
     Register a user
     """
     if request.user.is_authenticated():
-        return redirect('home_page')
+        return redirect('/')
 
     form = RegisterForm(data=request.POST or None)
     if request.method == 'POST':
@@ -30,7 +30,7 @@ def user_register(request):
                 Please confirm your account by clicking on the confirmation link \
                 sent to your email.")
             login(request, user)
-            return redirect('home_page')
+            return redirect('/')
 
     context = {
         'form': form
@@ -138,7 +138,7 @@ def user_send_password_reset_email(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Password reset email sent. Please check your email for instructions.")
-            return redirect('users:send_password_reset_email')
+            return redirect('send_password_reset_email')
 
     context = {
         'form': form
@@ -161,19 +161,19 @@ def user_password_reset(request):
         payload = jwt.decode(token, settings.SECRET_KEY, algorithm='HS256')
     except jwt.ExpiredSignature:
         messages.error(request, 'Reset token has expired.')
-        return redirect('users:send_password_reset_email')
+        return redirect('send_password_reset_email')
     except jwt.DecodeError:
         messages.error(request, 'Error decoding reset token.')
-        return redirect('users:send_password_reset_email')
+        return redirect('send_password_reset_email')
     except jwt.InvalidTokenError:
         messages.error(request, 'Invalid reset token.')
-        return redirect('users:send_password_reset_email')
+        return redirect('send_password_reset_email')
 
     try:
         user = User.objects.get(pk=payload['reset'])
     except User.DoesNotExist:
         messages.error(request, 'Invalid token.')
-        return redirect('users:send_password_reset_email')
+        return redirect('send_password_reset_email')
 
     form = PasswordResetForm(data=request.POST or None, user=user)
     if request.method == 'POST':

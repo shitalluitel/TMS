@@ -47,22 +47,26 @@
                                 <td>{{ customer.name }}</td>
                                 <td>{{ customer.address }}</td>
                                 <td>{{ customer.phone_number }}</td>
-                                {% if trash == 'True' %}
-                                    <td>
-                                        <a href="{% url 'customer_restore' pk=customer.id %}"><span><i
-                                                class="fa fa-undo fa-2x"></i></span></a>
-                                        &nbsp;
-                                        <a href="{% url 'customer_delete' pk=customer.id %}"><span> <i
-                                                class="fa fa-trash text-danger fa-2x"></i></span></a>
-                                    </td>
+                                {% if not customer.name.lower == 'cash' %}
+                                    {% if trash == 'True' %}
+                                        <td>
+                                            <a href="{% url 'customer_restore' pk=customer.id %}"><span><i
+                                                    class="fa fa-undo fa-2x"></i></span></a>
+                                            &nbsp;
+                                            <a href="{% url 'customer_delete' pk=customer.id %}"><span> <i
+                                                    class="fa fa-trash text-danger fa-2x"></i></span></a>
+                                        </td>
+                                    {% else %}
+                                        <td>
+                                            <a href="{% url 'customer_edit' pk=customer.id %}"><span><i
+                                                    class="fa fa-edit fa-2x"></i></span></a>
+                                            &nbsp;
+                                            <a href="{% url 'customer_soft_delete' pk=customer.id %}"><span> <i
+                                                    class="fa fa-trash-o text-danger fa-2x"></i></span></a>
+                                        </td>
+                                    {% endif %}
                                 {% else %}
-                                    <td>
-                                        <a href="{% url 'customer_edit' pk=customer.id %}"><span><i
-                                                class="fa fa-edit fa-2x"></i></span></a>
-                                        &nbsp;
-                                        <a href="{% url 'customer_soft_delete' pk=customer.id %}"><span> <i
-                                                class="fa fa-trash-o text-danger fa-2x"></i></span></a>
-                                    </td>
+                                    <td></td>
                                 {% endif %}
 
                             </tr>

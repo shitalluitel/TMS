@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import Http404
 from django.utils import timezone
-
+from django.core.validators import ValidationError
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CustomerForm
@@ -24,6 +24,7 @@ def customer_create(request):
             customer.save()
             messages.success(request, "Customer %s added" % (customer.name))
             return redirect('customer_create')
+            # raise form.ValidatioError(_("Username already exist."))
     context = {
         'form': form,
     }
@@ -95,16 +96,20 @@ def customer_delete(request, pk):
     except customer_data.DoesNotExist:
         return Http404
 
-    if request.method == "POST":
-        customer_data.delete()
-        return redirect(reverse('customer_list') + '?trash=True')
+    if not customer_data.name.lower() == "cash":
+        if request.method == "POST":
+            customer_data.delete()
+            return redirect(reverse('customer_list') + '?trash=True')
 
-    context = {
-        "customer_data": customer_data,
-        "text": 'Delete'
-    }
+        context = {
+            "customer_data": customer_data,
+            "text": 'Delete'
+        }
 
-    return render(request, 'customer/delete.html', context)
+        return render(request, 'customer/delete.html', context)
+
+    else:
+        return render(request, 'customer/delete.html')
 
 
 @login_required

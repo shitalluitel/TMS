@@ -1,3 +1,4 @@
+from django.core.exceptions import NON_FIELD_ERRORS
 from django.db import models
 from users.models import User
 
@@ -6,7 +7,7 @@ from users.models import User
 
 class Customer(models.Model):
     user = models.ForeignKey(User, related_name='Customer', on_delete=models.CASCADE)
-    name = models.CharField(max_length=64)
+    name = models.CharField(max_length=128)
     address = models.CharField(max_length=244)
     phone_number = models.CharField(max_length=32)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -18,3 +19,4 @@ class Customer(models.Model):
     class Meta:
         db_table = "customer"
         ordering = ["name"]  # this is used to add name in select box
+        unique_together = ('name', 'phone_number')

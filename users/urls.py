@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^password_reset/$', views.user_password_reset, name='password_reset'),
     url(r'^change_password/$', views.user_password_change, name='user_password_change'),
     url(r'^profile/$', views.user_profile_edit, name="profile_edit"),
+    url(r'^confirm_email/$', views.user_email_confirm, name='email_confirm'),
 ]

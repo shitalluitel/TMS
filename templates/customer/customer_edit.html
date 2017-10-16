@@ -1,5 +1,5 @@
 {% extends    'base_temp.html' %}
-
+{% load staticfiles %}
 {% block breadcrumb %}
     <div class="container-fluid breadcrumb-style">
         <div class="page-header">
@@ -18,29 +18,28 @@
 
 {% block content %}
     <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                {% if messages %}
+        {% if messages %}
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
                     {% for message in messages %}
                         <div class="alert alert-dismissible alert-{{ message.tags }}">
                             <button type="button" class="close" data-dismiss="alert">×</button>
                             <p>{{ message }}</p>
                         </div>
                     {% endfor %}
-                {% endif %}
-
+                </div>
             </div>
-        </div>
-
+        {% endif %}
         <div class="row">
             <div class="col-xs-12 col-md-offset-1 col-md-10">
 
-                {% if form.non_form_errors %}
+                {% if form.non_field_errors %}
                     <div class="row">
                         <div class="col-md-12">
                             <div class="alert alert-danger">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
                                 <ul>
-                                    {% for error in form.non_form_errors %}
+                                    {% for error in form.non_field_errors %}
                                         <li>{{ error }}</li>
                                     {% endfor %}
                                 </ul>
@@ -48,7 +47,6 @@
                         </div>
                     </div>
                 {% endif %}
-                <br><br><br>
                 <form method="POST">
 
                     {% csrf_token %}
@@ -98,7 +96,8 @@
 
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-3">
-                                        <button type="submit" formnovalidate name="submit" class="btn btn-primary">Submit
+                                        <button type="submit" formnovalidate name="submit" class="btn btn-primary">
+                                            Submit
                                         </button>
                                     </div>
                                 </div>

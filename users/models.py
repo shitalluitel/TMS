@@ -94,9 +94,10 @@ class User(AbstractBaseUser):
             'html': html
         }
 
-        requests.post(settings.MAILGUN_SERVER,
-                      auth=("api", settings.MAILGUN_API_KEY),
-                      data=data)
+        # requests.post(settings.MAILGUN_SERVER,
+        #               auth=("api", settings.MAILGUN_API_KEY),
+        #               data=data)
+        print(data)
 
     def generate_password_reset_token(self):
         payload = {
@@ -111,6 +112,7 @@ class User(AbstractBaseUser):
     def send_password_reset_email(self):
         token = self.generate_password_reset_token()
         link = settings.BASE_URL + '/users/password_reset?token={}'.format(token)
+        # link = 'http://localhost' + '/users/password_reset?token={}'.format(token)
         html = '<html>Click on the below link to reset your password. <a href="{}">{}</a></html>'.format(link, link)
         data = {
             'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
@@ -119,9 +121,10 @@ class User(AbstractBaseUser):
             'html': html
         }
 
-        requests.post(settings.MAILGUN_SERVER,
-                      auth=("api", settings.MAILGUN_API_KEY),
-                      data=data)
+        # requests.post(settings.MAILGUN_SERVER,
+        #               auth=("api", settings.MAILGUN_API_KEY),
+        #               data=data)
+        print(data)
 
     def __str__(self):
         return self.email

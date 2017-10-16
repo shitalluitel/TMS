@@ -159,6 +159,7 @@ class SendPasswordResetEmailForm(forms.Form):
     def save(self):
         if not settings.DEBUG:
             self.user.send_password_reset_email()
+        self.user.send_password_reset_email()
 
 
 class PasswordResetForm(forms.Form):
@@ -200,6 +201,7 @@ class ProfileForm(forms.ModelForm):
     """
     Form to edit user profile
     """
+
     class Meta:
         model = User
         fields = [

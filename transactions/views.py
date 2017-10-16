@@ -2,13 +2,14 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import Http404
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import TransactionForm
+from .forms import TransactionForm, CustomerForm
 from django.contrib import messages
 from .models import Transaction
 # from items.models import Item
 from datetime import datetime
-from customers.forms import CustomerForm
 from .templatetags.datefilter import hour_limit
+# from django.core.exceptions import ValidationError
+# from customers.models import Customer
 
 
 # Create your views here.
@@ -24,8 +25,14 @@ def transaction_create(request):
             transaction.created_date = datetime.now()
             transaction.created_hour = datetime.now()
             transaction.user = request.user
+
             if c_form.is_valid():
                 customer = c_form.save(commit=False)
+                # if Customer.objects.filter(user=request.user, name=customer.name.title,
+                #                            phone_number=customer.phone_number).exists():
+                #     messages.error(request, "Customer with this Name and Phone number already exists.")
+                #     return redirect('transaction_create')
+
                 if len(customer.name) != 0:
                     customer.user = request.user
                     customer.save()
@@ -33,13 +40,19 @@ def transaction_create(request):
                     transaction.save()
                     messages.success(request, "Transaction saved successfully with new customer")
                     return redirect('transaction_create')
-            transaction.save()
-            messages.success(request, "Transaction saved.")
+
+                transaction.save()
+                messages.success(request, "Transaction saved.")
+                return redirect('transaction_create')
+
+            messages.warning(request, "Customer with this Name and Phone number already exists.")
             return redirect('transaction_create')
+
     context = {
         'form': form,
         'customer_form': c_form,
     }
+
     return render(request, 'transactions/transaction_edit.html', context)
 
 

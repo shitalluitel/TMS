@@ -5,43 +5,62 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-offset-3 col-md-6">
-                    {% if text == "Trash" %}
-                        <p class="lead text-center">Are you sure, you want to delete customer
-                            <strong>{{ customer_data.name }}</strong> ? You
-                            can found this customer in trash.
-                            {% else %}
-                        <p class="lead text-center">Are you sure, you want to {{ text }} customer
-                        <strong>{{ customer_data.name }}</strong> ?
-                    {% endif %}
+                    {% if context %}
+                        {% if text == "Trash" %}
+                            <p class="lead text-center">Are you sure, you want to delete customer
+                                <strong>{{ customer_data.name }}</strong> ? You
+                                can found this customer in trash.</p>
+                        {% else %}
+                            <p class="lead text-center">Are you sure, you want to {{ text }} customer
+                                <strong>{{ customer_data.name }}</strong> ?</p>
+                        {% endif %}
 
-                    </p>
+                        <form method="POST" class="form-horizontal">
 
-                    <form method="POST" class="form-horizontal">
+                            {% csrf_token %}
 
-                        {% csrf_token %}
+                            <div class="form-group">
 
-                        <div class="form-group">
+                                <div class="col-md-offset-3">
 
-                            <div class="col-md-offset-3">
-
-                                <div class="col-md-4">
-                                    <button type="submit"
-                                            class="btn {% if text == 'Delete' or text == 'Trash' %} btn-danger {% else %} btn-primary {% endif %}btn-block">{{ text }}</button>
+                                    <div class="col-md-4">
+                                        <button type="submit"
+                                                class="btn {% if text == 'Delete' or text == 'Trash' %} btn-danger {% else %} btn-primary {% endif %}btn-block">{{ text }}</button>
+                                    </div>
+                                    <div class="visible-xs visible-sm">
+                                        <br>
+                                    </div>
+                                    <div class="col-md-4">
+                                        {% if text == "Trash" %}
+                                            <a href="{% url 'customer_list' %}" class="btn btn-default btn-block">
+                                        {% else %}
+                                            <a href="{% url 'customer_list' %}?trash=True"
+                                               class="btn btn-default btn-block">
+                                        {% endif %}Cancel</a>
+                                    </div>
                                 </div>
-                                <div class="visible-xs visible-sm">
-                                    <br>
-                                </div>
-                                <div class="col-md-4">
-                                    {% if text == "Trash" %}
-                                       <a  href="{% url 'customer_list' %}" class="btn btn-default btn-block">
-                                    {% else %}
-                                        <a href="{% url 'customer_list' %}?trash=True" class="btn btn-default btn-block">
-                                    {% endif %}Cancel</a>
-                                </div>
+
                             </div>
+                        </form>
+                    {% else %}
 
+                        <p class="lead text-center">You are unable to delete this customer. Deletion to this customer
+                            may harm this system.</p>
+
+
+
+                        <div class="col-md-offset-5">
+
+                            <div class="col-md-4">
+
+                                <a href="{% url 'customer_list' %}" class="btn btn-default btn-block">
+                                    Back</a>
+                            </div>
                         </div>
-                    </form>
+
+
+
+                    {% endif %}
 
                 </div>
             </div>
