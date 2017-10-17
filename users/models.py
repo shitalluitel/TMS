@@ -89,18 +89,21 @@ class User(AbstractBaseUser):
         token = self.generate_confirmation_token()
         link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
         html = '<html>Click on the below link to confirm your email. <a href="{}">{}</a></html>'.format(link, link)
-        data = {
-            'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
-            'to': self.email,
-            'subject': "Email Confirmation",
-            'html': html
-        }
+        # data = {
+        #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
+        #     'to': self.email,
+        #     'subject': "Email Confirmation",
+        #     'html': html | safe
+        # }
 
         # requests.post(settings.MAILGUN_SERVER,
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
         print(data)
-        email = EmailMessage(data=data|safe, to=[self.email])
+        email = EmailMessage(
+            'From: {} <{}> \n To: {} \n subject: Email Confirmation \n {}'.format('Daily Cost', settings.ADMIN_EMAIL,
+                                                                                  self.email, html | safe),
+            to=[self.email])
         email.send()
 
     def generate_password_reset_token(self):
