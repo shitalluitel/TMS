@@ -89,7 +89,7 @@ class User(AbstractBaseUser):
     def send_confirmation_email(self):
         token = self.generate_confirmation_token()
         link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
-        html = '<html><body>Click on the below link to confirm your email. <a href="{}">{}</a></body></html>'.format(
+        html = '<html><body>Click on the below link to confirm your email.<br> <a href="{}">{}</a></body></html>'.format(
             link, link)
         # data = {
         #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
@@ -102,7 +102,8 @@ class User(AbstractBaseUser):
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
         # print(data)
-        email = EmailMessage('subject: Email Confirmation ', html|safe, to=[self.email])
+        email = EmailMessage('subject: Email Confirmation ', html, to=[self.email])
+        email.content_subtype = "html"
         # email.attach(html)
         email.send()
 
