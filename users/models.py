@@ -4,6 +4,7 @@ import jwt
 import requests
 
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.core.mail import EmailMultiAlternatives
 from django.db import models
 from django.conf import settings
 from django.template.defaultfilters import safe
@@ -85,25 +86,29 @@ class User(AbstractBaseUser):
         token = jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256').decode('utf-8')
         return token
 
+    # def send_confirmation_email(self):
+    #     token = self.generate_confirmation_token()
+    #     link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
+    #     html = '<html>Click on the below link to confirm your email. <a href="{}">{}</a></html>'.format(link, link)
+    #     # data = {
+    #     #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
+    #     #     'to': self.email,
+    #     #     'subject': "Email Confirmation",
+    #     #     'html': html | safe
+    #     # }
+    #
+    #     # requests.post(settings.MAILGUN_SERVER,
+    #     #               auth=("api", settings.MAILGUN_API_KEY),
+    #     #               data=data)
+    #     # print(data)
+
     def send_confirmation_email(self):
         token = self.generate_confirmation_token()
         link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
-        html = '<html>Click on the below link to confirm your email. <a href="{}">{}</a></html>'.format(link, link)
-        # data = {
-        #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
-        #     'to': self.email,
-        #     'subject': "Email Confirmation",
-        #     'html': html | safe
-        # }
+        html = '<html><body>Click on the below link to confirm your email. <a href="{}">{}</a></body></html>'.format(link, link)
 
-        # requests.post(settings.MAILGUN_SERVER,
-        #               auth=("api", settings.MAILGUN_API_KEY),
-        #               data=data)
-        # print(data)
-        email = EmailMessage(
-            'From: {} <{}> To: {}  subject: Email Confirmation  {}'.format('Daily Cost', settings.ADMIN_EMAIL,
-                                                                                  self.email, html),
-            to=[self.email])
+        email = EmailMultiAlternatives('Email Confirmation','{} <{}>'.format('Lupim','lupim@admin.com'),[self.email])
+        email.attach_alternative(html, "text/html")
         email.send()
 
     def generate_password_reset_token(self):
