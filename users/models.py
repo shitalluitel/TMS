@@ -86,30 +86,33 @@ class User(AbstractBaseUser):
         token = jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256').decode('utf-8')
         return token
 
-    # def send_confirmation_email(self):
-    #     token = self.generate_confirmation_token()
-    #     link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
-    #     html = '<html>Click on the below link to confirm your email. <a href="{}">{}</a></html>'.format(link, link)
-    #     # data = {
-    #     #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
-    #     #     'to': self.email,
-    #     #     'subject': "Email Confirmation",
-    #     #     'html': html | safe
-    #     # }
-    #
-    #     # requests.post(settings.MAILGUN_SERVER,
-    #     #               auth=("api", settings.MAILGUN_API_KEY),
-    #     #               data=data)
-    #     # print(data)
-
     def send_confirmation_email(self):
         token = self.generate_confirmation_token()
         link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
-        html = '<html><body>Click on the below link to confirm your email. <a href="{}">{}</a></body></html>'.format(link, link)
+        html = '<html><body>Click on the below link to confirm your email. <a href="{}">{}</a></body></html>'.format(
+            link, link)
+        # data = {
+        #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
+        #     'to': self.email,
+        #     'subject': "Email Confirmation",
+        #     'html': html | safe
+        # }
 
-        email = EmailMultiAlternatives('Email Confirmation','{} <{}>'.format('Lupim','lupim@admin.com'),[self.email])
-        email.attach_alternative(html, "text/html")
+        # requests.post(settings.MAILGUN_SERVER,
+        #               auth=("api", settings.MAILGUN_API_KEY),
+        #               data=data)
+        # print(data)
+        email = EmailMessage('subject: Email Confirmation', to=[self.email])
+        email.attach(html)
         email.send()
+
+    # def send_confirmation_email(self):
+    #     token = self.generate_confirmation_token()
+    #     link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
+    #     html = '<html><body>Click on the below link to confirm your email. <a href="{}">{}</a></body></html>'.format(link, link)
+    #
+    #     email = EmailMultiAlternatives('')
+    #     email.send()
 
     def generate_password_reset_token(self):
         payload = {
