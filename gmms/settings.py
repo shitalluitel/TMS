@@ -150,7 +150,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 LOGIN_URL = '/users/login/'
 AUTH_USER_MODEL = 'users.User'
 BASE_URL = 'http://lupim.herokuapp.com/'
-ADMIN_EMAIL = 'ctallutiel@gmail.com'
+ADMIN_EMAIL = 'noreply@lupim.com'
 
 '''
 for email google smtp
