@@ -102,8 +102,8 @@ class User(AbstractBaseUser):
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
         # print(data)
-        email = EmailMessage('subject: Email Confirmation', to=[self.email])
-        email.attach(html)
+        email = EmailMessage('subject: Email Confirmation ',html, to=[self.email])
+        # email.attach(html)
         email.send()
 
     # def send_confirmation_email(self):
