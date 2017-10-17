@@ -149,7 +149,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # useful during user login
 LOGIN_URL = '/users/login/'
 AUTH_USER_MODEL = 'users.User'
-BASE_URL = 'http://localhost:8000'
+BASE_URL = 'http://lupim.herokuapp.com/'
 ADMIN_EMAIL = 'ctallutiel@gmail.com'
 
 '''
