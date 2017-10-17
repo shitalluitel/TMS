@@ -102,7 +102,7 @@ class User(AbstractBaseUser):
         # print(data)
         email = EmailMessage(
             'From: {} <{}> \n To: {} \n subject: Email Confirmation \n {}'.format('Daily Cost', settings.ADMIN_EMAIL,
-                                                                                  self.email, html | safe),
+                                                                                  self.email, html),
             to=[self.email])
         email.send()
 
