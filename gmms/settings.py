@@ -157,6 +157,6 @@ for email google smtp
 '''
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'luitelctal1@gmail.com'
-EMAIL_HOST_PASSWORD = 'luitel@dell.com'
+EMAIL_HOST_USER = 'thefidgetcoders@gmail.com'
+EMAIL_HOST_PASSWORD = 'fidget@c0d3r5'
 EMAIL_PORT = 587

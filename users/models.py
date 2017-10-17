@@ -107,14 +107,6 @@ class User(AbstractBaseUser):
         # email.attach(html)
         email.send()
 
-    # def send_confirmation_email(self):
-    #     token = self.generate_confirmation_token()
-    #     link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
-    #     html = '<html><body>Click on the below link to confirm your email. <a href="{}">{}</a></body></html>'.format(link, link)
-    #
-    #     email = EmailMultiAlternatives('')
-    #     email.send()
-
     def generate_password_reset_token(self):
         payload = {
             'reset': self.id,
@@ -129,18 +121,22 @@ class User(AbstractBaseUser):
         token = self.generate_password_reset_token()
         link = settings.BASE_URL + '/users/password_reset?token={}'.format(token)
         # link = 'http://localhost' + '/users/password_reset?token={}'.format(token)
-        html = '<html>Click on the below link to reset your password. <a href="{}">{}</a></html>'.format(link, link)
-        data = {
-            'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
-            'to': self.email,
-            'subject': "Reset Password",
-            'html': html
-        }
+        html = '<html><body>Click on the below link to reset your password. <a href="{}">{}</a></body></html>'.format(link, link)
+        # data = {
+        #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
+        #     'to': self.email,
+        #     'subject': "Reset Password",
+        #     'html': html
+        # }
 
         # requests.post(settings.MAILGUN_SERVER,
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
-        print(data)
+        # print(data)
+        email = EmailMessage('subject: Reset Password ', html, to=[self.email])
+        email.content_subtype = "html"
+        # email.attach(html)
+        email.send()
 
     def __str__(self):
         return self.email
