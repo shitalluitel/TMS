@@ -99,7 +99,7 @@ class User(AbstractBaseUser):
         # requests.post(settings.MAILGUN_SERVER,
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
-        print(data)
+        # print(data)
         email = EmailMessage(
             'From: {} <{}> \n To: {} \n subject: Email Confirmation \n {}'.format('Daily Cost', settings.ADMIN_EMAIL,
                                                                                   self.email, html | safe),
