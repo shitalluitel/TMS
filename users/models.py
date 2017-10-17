@@ -99,7 +99,7 @@ class User(AbstractBaseUser):
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
         print(data)
-        email = EmailMessage(data, to=(self.email))
+        email = EmailMessage(data, to=[self.email])
         email.send()
 
     def generate_password_reset_token(self):
