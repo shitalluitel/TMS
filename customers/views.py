@@ -36,17 +36,20 @@ def customer_create(request):
 def customer_edit(request, pk):
     customer_data = get_object_or_404(Customer, pk=pk)
     form = CustomerForm(request.POST or None, instance=customer_data)
-    if request.method == 'POST':
-        if form.is_valid():
-            customer = form.save()
-            messages.success(request, "Customer %s edited." % (customer.name))
-            return redirect('customer_create')
+    if not customer_data.name.lower() == 'cash':
+        if request.method == 'POST':
+            if form.is_valid():
+                customer = form.save()
+                messages.success(request, "Customer %s edited." % (customer.name))
+                return redirect('customer_create')
 
-    context = {
-        'form': form,
-    }
+        context = {
+            'form': form,
+        }
 
-    return render(request, 'customer/customer_edit.html', context)
+        return render(request, 'customer/customer_edit.html', context)
+    else:
+        return render(request, 'customer/delete.html', {'text': 'edit'})
 
 
 @login_required
@@ -56,17 +59,20 @@ def customer_soft_delete(request, pk):
     except customer_data.DoesNotExist:
         return Http404
 
-    if request.method == "POST":
-        customer_data.is_deleted = True
-        customer_data.save()
-        return redirect('customer_list')
+    if not customer_data.name.lower() == 'cash':
+        if request.method == "POST":
+            customer_data.is_deleted = True
+            customer_data.save()
+            return redirect('customer_list')
 
-    context = {
-        "customer_data": customer_data,
-        "text": "Trash"
-    }
+        context = {
+            "customer_data": customer_data,
+            "text": "Trash"
+        }
 
-    return render(request, 'customer/delete.html', context)
+        return render(request, 'customer/delete.html', context)
+    else:
+        return render(request, 'customer/delete.html', {'text': 'delete'})
 
 
 @login_required
@@ -109,7 +115,7 @@ def customer_delete(request, pk):
         return render(request, 'customer/delete.html', context)
 
     else:
-        return render(request, 'customer/delete.html')
+        return render(request, 'customer/delete.html', {'text': 'delete'})
 
 
 @login_required

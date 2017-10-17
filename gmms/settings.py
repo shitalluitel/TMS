@@ -83,27 +83,27 @@ WSGI_APPLICATION = 'gmms.wsgi.application'
 # }
 #
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gssmlupim',
-        'USER': 'shital1',
-        'PASSWORD': 'luitel@dell.com',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'd7jvp0713qcp3k',
-#         'USER': 'iisjredvzzivlc',
-#         'PASSWORD': '79ff5056c77b15acfaeaa9536c73a5cecca656dc411481f71163ae4a4d783dae',
-#         'HOST': 'ec2-54-83-58-17.compute-1.amazonaws.com',
-#         'PORT': '5432',
+#         'NAME': 'gssmlupim',
+#         'USER': 'shital1',
+#         'PASSWORD': 'luitel@dell.com',
+#         'HOST': 'localhost',
+#         'PORT': '',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7jvp0713qcp3k',
+        'USER': 'iisjredvzzivlc',
+        'PASSWORD': '79ff5056c77b15acfaeaa9536c73a5cecca656dc411481f71163ae4a4d783dae',
+        'HOST': 'ec2-54-83-58-17.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -151,3 +151,12 @@ LOGIN_URL = '/users/login/'
 AUTH_USER_MODEL = 'users.User'
 BASE_URL = 'http://localhost:8000'
 ADMIN_EMAIL = 'ctallutiel@gmail.com'
+
+'''
+for email google smtp
+'''
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'luitelctal1@gmail.com'
+EMAIL_HOST_PASSWORD = 'luitel@dell.com'
+EMAIL_PORT = 587

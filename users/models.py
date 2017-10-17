@@ -8,6 +8,7 @@ from django.db import models
 from django.conf import settings
 
 from .validators import UsernameValidator
+from django.core.mail import EmailMessage
 
 
 class UserManager(BaseUserManager):
@@ -98,6 +99,8 @@ class User(AbstractBaseUser):
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
         print(data)
+        email = EmailMessage(data,to=self.email)
+        email.send()
 
     def generate_password_reset_token(self):
         payload = {

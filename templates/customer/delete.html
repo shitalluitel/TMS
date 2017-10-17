@@ -44,8 +44,8 @@
                         </form>
                     {% else %}
 
-                        <p class="lead text-center">You are unable to delete this customer. Deletion to this customer
-                            may harm this system.</p>
+                        <p class="lead text-center">You are unable to {{ text }} this customer. {% if text == 'delete' %} Deleting {% else %} Editing {% endif %} this customer
+                            may harm your system.</p>
 
 
 
