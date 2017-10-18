@@ -88,7 +88,7 @@ class User(AbstractBaseUser):
 
     def send_confirmation_email(self):
         token = self.generate_confirmation_token()
-        link = settings.BASE_URL + '/users/confirm_email?token={}'.format(token)
+        link = settings.BASE_URL + 'users/confirm_email?token={}'.format(token)
         html = '<html><body>Click on the below link to confirm your email.<br> <a href="{}">{}</a></body></html>'.format(
             link, link)
         # data = {
@@ -101,7 +101,7 @@ class User(AbstractBaseUser):
         # requests.post(settings.MAILGUN_SERVER,
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
-        # print(data)
+        print('http://localhost:8000/users/confirm_email?token={}'.format(token))
         email = EmailMessage('subject: Email Confirmation ', html, to=[self.email])
         email.content_subtype = "html"
         # email.attach(html)
@@ -119,9 +119,9 @@ class User(AbstractBaseUser):
 
     def send_password_reset_email(self):
         token = self.generate_password_reset_token()
-        link = settings.BASE_URL + '/users/password_reset?token={}'.format(token)
+        link = settings.BASE_URL + 'users/password_reset?token={}'.format(token)
         # link = 'http://localhost' + '/users/password_reset?token={}'.format(token)
-        html = '<html><body>Click on the below link to reset your password. <a href="{}">{}</a></body></html>'.format(link, link)
+        html = '<html><body>Click on the below link to reset your password.<br> <a href="{}">{}</a></body></html>'.format(link, link)
         # data = {
         #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
         #     'to': self.email,
@@ -132,7 +132,7 @@ class User(AbstractBaseUser):
         # requests.post(settings.MAILGUN_SERVER,
         #               auth=("api", settings.MAILGUN_API_KEY),
         #               data=data)
-        # print(data)
+        print('http://localhost:8000/users/password_reset?token={}'.format(token))
         email = EmailMessage('subject: Reset Password ', html, to=[self.email])
         email.content_subtype = "html"
         # email.attach(html)

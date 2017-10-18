@@ -10,6 +10,7 @@
 {% block extra_script %}
     <script src="{% static 'nepali_datepicker/nepali.datepicker.v2.2.min.js' %}"></script>
     <script src="{% static 'js/transaction/transaction_js.js' %}"></script>
+    {#    <script src="{% static 'js/transaction/transaction_list_js.js' %}"></script>#}
     <script>
         $(document).ready(function () {
             {% if start_date and end_date %}
@@ -37,6 +38,12 @@
         $('body').on('click', '.submit', function () {
             location.href = {% url "transaction_list" %} +'?utf8=✓&start_date=' + BS2AD($('#start_date').val()) + '&end_date=' + BS2AD($('#end_date').val());
         });
+
+        $('body').on('change', '.cash-paid', function () {
+            var data = $(this).val();
+            location.href = {% url "transaction_list"%}+data + '/paid';
+        });
+
     </script>
 {% endblock %}
 
@@ -201,12 +208,13 @@
             <table class="table table-hover table-striped table-bordered">
                 <thead>
                 <tr>
-                    <th style="width: 10%">S.N.</th>
-                    <th style="width: 25%">Customer Name</th>
+                    <th style="width: 5%">S.N.</th>
+                    <th style="width: 20%">Customer Name</th>
                     <th style="width: 15%">Item</th>
                     <th style="width: 10%">Quantity</th>
                     <th style="width: 10%">Total Price</th>
                     <th style="width: 20%">Transaction Date</th>
+                    <th style="width: 10%" class="text-center">Paid</th>
                     <th style="width: 10%"></th>
                 </tr>
                 </thead>
@@ -221,12 +229,18 @@
                         <td>{{ transaction.quantity }}</td>
                         <td>{{ transaction.total_price }}</td>
                         <td class="created-date">{{ transaction.created_date|slugify }}</td>
+                        <td class="text-center"><input type="checkbox" {% if transaction.cash_paid %}checked disabled{% else %}
+                                   class="cash-paid " value="{{ transaction.id }}" {% endif %}></td>
                         <td>
-                            <a href="{% url 'transaction_edit' pk=transaction.id %}"><span><i
-                                    class="fa fa-edit fa-2x"></i></span></a>
-                            &nbsp;
-                            <a href="{% url 'transaction_delete' pk=transaction.id %}"><span> <i
-                                    class="fa fa-trash text-danger fa-2x"></i></span></a>
+                            {% if transaction.valid_date|hour_limit %}
+                                <a href="{% url 'transaction_edit' pk=transaction.id %}"><span><i
+                                        class="fa fa-edit fa-2x"></i></span></a>
+                                &nbsp;
+                                <a href="{% url 'transaction_delete' pk=transaction.id %}"><span> <i
+                                        class="fa fa-trash text-danger fa-2x"></i></span></a>
+                            {% else %}
+                                <p class="text text-center"><strong>-</strong> </p>
+                            {% endif %}
                         </td>
                     </tr>
 

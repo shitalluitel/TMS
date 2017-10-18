@@ -13,5 +13,6 @@ class Transaction(models.Model):
     # customer_name = models.CharField(null=False, max_length=120)
     quantity = models.DecimalField(max_digits=10, decimal_places=2, null=False)
     total_price = models.DecimalField(max_digits=10, decimal_places=2, null=False)
+    cash_paid = models.BooleanField(default=False)
     created_date = models.DateField(auto_now_add=True)
     valid_date = models.DateTimeField(auto_now_add=True)

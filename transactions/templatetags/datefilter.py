@@ -20,7 +20,7 @@ def datefilter(value):
 def hour_limit(hour):
     timediff = datetime.datetime.now(pytz.utc) - hour
     c_time = timediff.total_seconds() / 3600
-    if c_time < 24:
+    if c_time <= 24:
         return True
     else:
         return False

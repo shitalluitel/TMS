@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002ddf32-a8b1-4dfc-9276-7864a8dfaf2e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/transaction/transaction_list_js.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/transactions/cash_pay.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmms/settings.py" afterPath="$PROJECT_DIR$/gmms/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/transaction.css" afterPath="$PROJECT_DIR$/static/css/transaction.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_temp.html" afterPath="$PROJECT_DIR$/templates/base_temp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/transactions/error_msg.html" afterPath="$PROJECT_DIR$/templates/transactions/error_msg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/transactions/transaction_list.html" afterPath="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/models.py" afterPath="$PROJECT_DIR$/transactions/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/templatetags/datefilter.py" afterPath="$PROJECT_DIR$/transactions/templatetags/datefilter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/urls.py" afterPath="$PROJECT_DIR$/transactions/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/views.py" afterPath="$PROJECT_DIR$/transactions/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,8 +82,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transactions/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="281">
+              <caret line="115" column="48" lean-forward="false" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -79,56 +91,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer_edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/customer/customer_edit.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transactions/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="144">
+              <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmms/settings.py">
+      <file leaf-file-name="transaction_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="152" column="23" lean-forward="false" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/customer/customer_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="135" column="53" lean-forward="false" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
+            <state relative-caret-position="96">
+              <caret line="216" column="61" lean-forward="false" selection-start-line="216" selection-start-column="61" selection-end-line="216" selection-end-column="61" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#624#1168#0#HTML" expanded="false" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/customers/views.py">
+      <file leaf-file-name="datefilter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transactions/templatetags/datefilter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cash_pay.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/transactions/cash_pay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="29" column="97" lean-forward="false" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transaction.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/transaction.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,10 +156,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -189,9 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/gmms/wsgi.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py" />
         <option value="$PROJECT_DIR$/items/migrations/0002_auto_20171012_0644.py" />
         <option value="$PROJECT_DIR$/all.json" />
@@ -204,14 +219,9 @@
         <option value="$PROJECT_DIR$/templates/customer/transaction_edit.html" />
         <option value="$PROJECT_DIR$/gmms/urls.py" />
         <option value="$PROJECT_DIR$/customers/urls.py" />
-        <option value="$PROJECT_DIR$/templates/base_temp.html" />
         <option value="$PROJECT_DIR$/templates/users/profile_edit.html" />
-        <option value="$PROJECT_DIR$/transactions/templatetags/datefilter.py" />
         <option value="$PROJECT_DIR$/items/views.py" />
-        <option value="$PROJECT_DIR$/transactions/urls.py" />
-        <option value="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
         <option value="$PROJECT_DIR$/static/js/transaction/transaction_js.js" />
-        <option value="$PROJECT_DIR$/templates/transactions/error_msg.html" />
         <option value="$PROJECT_DIR$/templates/transactions/delete.html" />
         <option value="$PROJECT_DIR$/static/base/main_style.css" />
         <option value="$PROJECT_DIR$/templates/users/login.html" />
@@ -219,7 +229,6 @@
         <option value="$PROJECT_DIR$/templates/units/delete.html" />
         <option value="$PROJECT_DIR$/templates/units/unit_list.html" />
         <option value="$PROJECT_DIR$/templates/items/item_list.html" />
-        <option value="$PROJECT_DIR$/transactions/models.py" />
         <option value="$PROJECT_DIR$/static/js/transaction/create_customer_js.js" />
         <option value="$PROJECT_DIR$/static/js/submit_btn.js" />
         <option value="$PROJECT_DIR$/templates/units/unit_edit.html" />
@@ -232,7 +241,6 @@
         <option value="$PROJECT_DIR$/templates/users/password_reset.html" />
         <option value="$PROJECT_DIR$/customers/forms.py" />
         <option value="$PROJECT_DIR$/transactions/forms.py" />
-        <option value="$PROJECT_DIR$/transactions/views.py" />
         <option value="$PROJECT_DIR$/templates/customer/customer_edit.html" />
         <option value="$PROJECT_DIR$/templates/customer/customer_list.html" />
         <option value="$PROJECT_DIR$/templates/customer/delete.html" />
@@ -240,6 +248,16 @@
         <option value="$PROJECT_DIR$/templates/items/item_edit.html" />
         <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/gmms/settings.py" />
+        <option value="$PROJECT_DIR$/templates/base_temp.html" />
+        <option value="$PROJECT_DIR$/transactions/models.py" />
+        <option value="$PROJECT_DIR$/transactions/urls.py" />
+        <option value="$PROJECT_DIR$/templates/transactions/cash_paid.html" />
+        <option value="$PROJECT_DIR$/transactions/views.py" />
+        <option value="$PROJECT_DIR$/static/js/transaction/transaction_list_js.js" />
+        <option value="$PROJECT_DIR$/templates/transactions/error_msg.html" />
+        <option value="$PROJECT_DIR$/static/css/transaction.css" />
+        <option value="$PROJECT_DIR$/transactions/templatetags/datefilter.py" />
+        <option value="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
       </list>
     </option>
   </component>
@@ -294,7 +312,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="transactions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gmms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gmms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transactions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,8 +347,18 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
+              <option name="myItemId" value="gmms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gmms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,7 +376,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;model&#9;FILE&#9;file:///home/shital/gmms/users/models.py&#10;vie&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;dele&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transactions/f&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/units/unit_edit.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;urls&#9;null&#9;null&#10;view&#9;null&#9;null&#10;models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;bas&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css" />
+    <property name="SearchEverywhereHistoryKey" value="transaction_li&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;urls&#9;FILE&#9;file:///home/shital/gmms/transactions/urls.py&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_temp&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vie&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;dele&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transactions/f&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/units/unit_edit.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;view&#9;null&#9;null&#10;models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -654,7 +700,7 @@
     <frame x="0" y="24" width="1360" height="689" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24048707" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24048707" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28419182" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20700152" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -716,15 +762,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/transactions/migrations/0007_transaction_created_hour.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/migrations/0010_auto_20171014_1515.py" />
-    <entry file="file://$PROJECT_DIR$/transactions/migrations/0009_auto_20171014_1514.py" />
     <entry file="file://$PROJECT_DIR$/transactions/migrations/0008_auto_20171014_1345.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -740,59 +777,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4086">
-          <caret line="227" column="63" lean-forward="false" selection-start-line="227" selection-start-column="63" selection-end-line="227" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/templatetags/datefilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="43" column="100" lean-forward="false" selection-start-line="43" selection-start-column="100" selection-end-line="43" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/transaction/transaction_js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/transactions/error_msg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/transactions/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,28 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.transactions_transaction">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/submit_btn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1000,19 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1080,16 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customers/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/items/item_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1118,31 +1061,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transactions/views.py">
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="281">
+          <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="135" column="53" lean-forward="false" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
+        <state relative-caret-position="1379">
+          <caret line="123" column="75" lean-forward="false" selection-start-line="123" selection-start-column="75" selection-end-line="123" selection-end-column="75" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmms/settings.py">
+    <entry file="file://$PROJECT_DIR$/transactions/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="152" column="23" lean-forward="false" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
+        <state relative-caret-position="216">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="87" column="96" lean-forward="false" selection-start-line="87" selection-start-column="96" selection-end-line="87" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.transactions_transaction">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="40" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/transaction/transaction_list_js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/error_msg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/transaction.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/cash_pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="97" lean-forward="false" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="115" column="48" lean-forward="false" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transactions/templatetags/datefilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="216" column="61" lean-forward="false" selection-start-line="216" selection-start-column="61" selection-end-line="216" selection-end-column="61" />
+          <folding>
+            <element signature="e#624#1168#0#HTML" expanded="false" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

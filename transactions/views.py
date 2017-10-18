@@ -37,10 +37,12 @@ def transaction_create(request):
                     customer.user = request.user
                     customer.save()
                     transaction.customer_id = customer.id
+                    transaction.cash_paid = False
                     transaction.save()
                     messages.success(request, "Transaction saved successfully with new customer")
                     return redirect('transaction_create')
 
+                transaction.cash_paid = True
                 transaction.save()
                 messages.success(request, "Transaction saved.")
                 return redirect('transaction_create')
@@ -108,6 +110,10 @@ def transaction_edit(request, pk):
                 transaction = form.save(commit=False)
                 transaction.total_price = transaction.item.unit_price * transaction.quantity
                 transaction.user = request.user
+                if not transaction.customer.name.lower() == 'cash':
+                    transaction.cash_paid = False
+                else:
+                    transaction.cash_paid = True
                 transaction.save()
                 return redirect('transaction_list')
 
@@ -136,3 +142,26 @@ def transaction_delete(request, pk):
         }
         return render(request, 'transactions/delete.html', context)
     return render(request, 'transactions/error_msg.html')
+
+
+@login_required
+def transaction_cash_paid(request, pk):
+    try:
+        transaction = Transaction.objects.get(user=request.user, id=pk)  # item is a database
+    except Transaction.DoesNotExist:
+        raise Http404()
+
+    if transaction.cash_paid:
+        return redirect('transaction_list')
+
+    if request.method == "POST":
+        transaction.cash_paid = True
+        transaction.customer_id = 1
+        transaction.save()
+        return redirect('transaction_list')
+
+    context = {
+        'transaction' : transaction,
+    }
+
+    return render(request, 'transactions/cash_pay.html', context)

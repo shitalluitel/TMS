@@ -1,24 +1,26 @@
 {% extends 'base_temp.html' %}
 
 {% block content %}
-    <br><br><br><br><br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-offset-3 col-md-6">
 
-                <p class="lead text-center">You have crossed your time limit. You are unable to
-                    {% if transaction.id %} edit  {% else %} delete {% endif %}this
-                    transaction.</p>
+    <div style="margin: 174px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+
+                    <p class="lead text-center">You have crossed your time limit. You are unable to
+                        {% if transaction.id %} edit  {% else %} delete {% endif %}this
+                        transaction.</p>
 
 
-                <div class="col-md-offset-4 col-md-4">
-                    <a href="{% url 'transaction_list' %}" class="btn btn-default btn-block"> Cancel</a>
+                    <div class="col-md-offset-4 col-md-4">
+                        <a href="{% url 'transaction_list' %}" class="btn btn-default btn-block"> Cancel</a>
+                    </div>
+
+
                 </div>
-
-                <br><br><br><br><br><br>
             </div>
-        </div>
 
+        </div>
     </div>
 {% endblock %}
 
