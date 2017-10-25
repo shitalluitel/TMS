@@ -54,10 +54,10 @@ def customer_edit(request, pk):
 
 @login_required
 def customer_soft_delete(request, pk):
-    try:
-        customer_data = Customer.objects.get(user=request.user, pk=pk)
-    except customer_data.DoesNotExist:
-        return Http404
+    # try:
+    customer_data = get_object_or_404(Customer, user=request.user, pk=pk)
+    # except customer_data.DoesNotExist:
+    #     return Http404
 
     if not customer_data.name.lower() == 'cash':
         if request.method == "POST":

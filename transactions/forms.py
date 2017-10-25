@@ -25,9 +25,9 @@ class TransactionForm(forms.ModelForm):
         }
     )
 
-    quantity = forms.CharField(
+    quantity = forms.DecimalField(
         label='Quantity',
-        widget=forms.TextInput(attrs={'class': 'form-control item-quantity', 'placeholder': '2'}),
+        widget=forms.NumberInput(attrs={'class': 'form-control item-quantity', 'min': '0'}),
     )
 
     total_price = forms.CharField(
@@ -64,6 +64,10 @@ class CustomerForm(forms.ModelForm):
         name = self.cleaned_data['name']
         return name.title()
 
+    def clean_address(self):
+        address = self.cleaned_data['address']
+        return address.title()
+
     class Meta():
         model = Customer
         fields = {
@@ -78,3 +82,4 @@ class CustomerForm(forms.ModelForm):
         phone_number = cleaned_data.get('phone_number')
         if Customer.objects.filter(name=name, phone_number=phone_number).exists():
             raise ValidationError("Customer with this Name and Phone number already exists.")
+        return cleaned_data

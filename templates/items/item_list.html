@@ -46,17 +46,23 @@
                                 <td>{{ item.unit }}</td>
                                 <td>{{ item.unit_price }}</td>
                                 <td>
-                                    <a href="{% url 'item_edit' pk=item.id %}"><span><i
-                                            class="fa fa-edit fa-2x"></i></span></a>
-                                    &nbsp;
-                                    <a href="{% url 'item_delete' pk=item.id %}"><span> <i
-                                            class="fa fa-trash text-danger fa-2x"></i></span></a>
+                                    {% if item.name.lower == 'cash' %}
+
+                                    {% else %}
+                                        <a href="{% url 'item_edit' pk=item.id %}"><span><i
+                                                class="fa fa-edit fa-2x"></i></span></a>
+                                        &nbsp;
+                                        <a href="{% url 'item_delete' pk=item.id %}"><span> <i
+                                                class="fa fa-trash text-danger fa-2x"></i></span></a>
+                                    {% endif %}
                                 </td>
                             </tr>
 
                         {% empty %}
                             <tr style="background-color: rgba(255,0,0,0.14);">
-                                <td class="text-center text-danger text-large" colspan="5">None</td>
+                                <td class="text-center text-large" style="background-color: red; color: white;"
+                                    colspan="5">None
+                                </td>
                             </tr>
                         {% endfor %}
 

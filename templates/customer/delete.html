@@ -5,7 +5,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-offset-3 col-md-6">
-                    {% if context %}
+
+                    {% if customer_data %}
                         {% if text == "Trash" %}
                             <p class="lead text-center">Are you sure, you want to delete customer
                                 <strong>{{ customer_data.name }}</strong> ? You
@@ -44,7 +45,7 @@
                         </form>
                     {% else %}
 
-                        <p class="lead text-center">You are unable to {{ text }} this customer. {% if text == 'delete' %} Deleting {% else %} Editing {% endif %} this customer
+                        <p class="lead text-center">You are unable to {{ text }} this customer. {% if text.lower == 'delete' or text.lower == 'trash' %} Deleting {% else %} Editing {% endif %} this customer
                             may harm your system.</p>
 
 

@@ -8,6 +8,9 @@ from .models import Transaction
 # from items.models import Item
 from datetime import datetime
 from .templatetags.datefilter import hour_limit
+from customers.models import Customer
+
+
 # from django.core.exceptions import ValidationError
 # from customers.models import Customer
 
@@ -28,10 +31,6 @@ def transaction_create(request):
 
             if c_form.is_valid():
                 customer = c_form.save(commit=False)
-                # if Customer.objects.filter(user=request.user, name=customer.name.title,
-                #                            phone_number=customer.phone_number).exists():
-                #     messages.error(request, "Customer with this Name and Phone number already exists.")
-                #     return redirect('transaction_create')
 
                 if len(customer.name) != 0:
                     customer.user = request.user
@@ -42,13 +41,21 @@ def transaction_create(request):
                     messages.success(request, "Transaction saved successfully with new customer")
                     return redirect('transaction_create')
 
-                transaction.cash_paid = True
+                if transaction.customer.name.lower() == 'cash':
+                    transaction.cash_paid = True
+                else:
+                    transaction.cash_paid = False
                 transaction.save()
                 messages.success(request, "Transaction saved.")
                 return redirect('transaction_create')
 
             messages.warning(request, "Customer with this Name and Phone number already exists.")
-            return redirect('transaction_create')
+            # c_data = c_form.save(commit=False)
+            # transaction_customer_id = Customer.objects.filter(name=c_form.name, phone_number=c_form.phone_number)
+            transaction.customer_id = 0
+            form = TransactionForm(instance=transaction)
+            # return redirect('transaction_create')
+            return render(request, 'transactions/transaction_edit.html', {'form': form})
 
     context = {
         'form': form,
@@ -161,7 +168,7 @@ def transaction_cash_paid(request, pk):
         return redirect('transaction_list')
 
     context = {
-        'transaction' : transaction,
+        'transaction': transaction,
     }
 
     return render(request, 'transactions/cash_pay.html', context)
