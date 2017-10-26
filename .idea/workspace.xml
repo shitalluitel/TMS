@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002ddf32-a8b1-4dfc-9276-7864a8dfaf2e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customers/views.py" afterPath="$PROJECT_DIR$/customers/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/customer/delete.html" afterPath="$PROJECT_DIR$/templates/customer/delete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/items/item_list.html" afterPath="$PROJECT_DIR$/templates/items/item_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/transactions/transaction_list.html" afterPath="$PROJECT_DIR$/templates/transactions/transaction_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/units/unit_list.html" afterPath="$PROJECT_DIR$/templates/units/unit_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/forms.py" afterPath="$PROJECT_DIR$/transactions/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transactions/views.py" afterPath="$PROJECT_DIR$/transactions/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmms/settings.py" afterPath="$PROJECT_DIR$/gmms/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,7 +55,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transactions/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -84,6 +77,20 @@
             <state relative-caret-position="141">
               <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="55" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gmms/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
+              <folding>
+                <marker date="1509023071935" expanded="true" signature="2460:2704" ph="..." />
+                <marker date="1509023071935" expanded="true" signature="2479:2702" ph="..." />
+                <marker date="1509023071935" expanded="true" signature="2709:3149" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,7 +195,6 @@
         <option value="$PROJECT_DIR$/templates/customer/customer_list.html" />
         <option value="$PROJECT_DIR$/templates/items/item_edit.html" />
         <option value="$PROJECT_DIR$/users/models.py" />
-        <option value="$PROJECT_DIR$/gmms/settings.py" />
         <option value="$PROJECT_DIR$/templates/base_temp.html" />
         <option value="$PROJECT_DIR$/transactions/models.py" />
         <option value="$PROJECT_DIR$/transactions/urls.py" />
@@ -205,6 +211,7 @@
         <option value="$PROJECT_DIR$/transactions/forms.py" />
         <option value="$PROJECT_DIR$/templates/transactions/transaction_edit.html" />
         <option value="$PROJECT_DIR$/transactions/views.py" />
+        <option value="$PROJECT_DIR$/gmms/settings.py" />
       </list>
     </option>
   </component>
@@ -277,7 +284,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;dele&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_li&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;urls&#9;FILE&#9;file:///home/shital/gmms/transactions/urls.py&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_temp&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;vie&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;transactions/f&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/units/unit_edit.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;view&#9;null&#9;null&#10;models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html&#10;log&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html" />
+    <property name="SearchEverywhereHistoryKey" value="setting.py&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;dele&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_li&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;urls&#9;FILE&#9;file:///home/shital/gmms/transactions/urls.py&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_temp&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;vie&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;transactions/f&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/units/unit_edit.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;view&#9;null&#9;null&#10;models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -1039,14 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1063,14 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/transactions/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1081,6 +1072,26 @@
             <element signature="e#4100#5060#0" expanded="false" />
             <element signature="e#5120#5637#0" expanded="false" />
             <element signature="e#5700#6238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
+          <folding>
+            <marker date="1509023071935" expanded="true" signature="2460:2704" ph="..." />
+            <marker date="1509023071935" expanded="true" signature="2479:2702" ph="..." />
+            <marker date="1509023071935" expanded="true" signature="2709:3149" ph="..." />
           </folding>
         </state>
       </provider>
