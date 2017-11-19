@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,11 +23,38 @@ SECRET_KEY = 'w8)(!h$^$cno&tn_@$u#-v=7qp7i+w&(v=e9actc%@3)6*x4=*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', '192.168.1.102', 'lupim.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
+SHARED_APPS = (
+    'tenant_schemas',  # mandatory, should always be before any django app
+    'tenant',  # you must list the app where your tenant model resides in
+
+    'django.contrib.contenttypes',
+
+    # everything below here is optional
+    'django.contrib.auth',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.admin',
+)
+
+TENANT_APPS = (
+    'django.contrib.contenttypes',
+
+    # your tenant-specific apps
+    'transactions',
+    'items',
+    'units',
+    'users',
+    'customers',
+)
+
 INSTALLED_APPS = [
+    'tenant_schemas',
+    'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,9 +66,11 @@ INSTALLED_APPS = [
     'units',
     'users',
     'customers',
+    'tenant',
 ]
 
 MIDDLEWARE = [
+    'tenant_schemas.middleware.TenantMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,6 +81,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'gmms.urls'
+# PUBLIC_SCHEMA_URLCONF = 'gmms.urls'
 
 TEMPLATES = [
     {
@@ -75,35 +104,20 @@ WSGI_APPLICATION = 'gmms.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-#
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'gssmlupim',
-#         'USER': 'shital1',
-#         'PASSWORD': 'luitel@dell.com',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7jvp0713qcp3k',
-        'USER': 'iisjredvzzivlc',
-        'PASSWORD': '79ff5056c77b15acfaeaa9536c73a5cecca656dc411481f71163ae4a4d783dae',
-        'HOST': 'ec2-54-83-58-17.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'tenant_schemas.postgresql_backend',
+        'NAME': 'tms',
+        'USER': 'shital',
+        'PASSWORD': 'luitel@dell.com',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
+DATABASE_ROUTERS = (
+    'tenant_schemas.routers.TenantSyncRouter',
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -135,6 +149,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+TENANT_MODEL = "tenant.TmsTenant"
+
+DEFAULT_FILE_STORAGE = 'tenant_schemas.storage.TenantFileSystemStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

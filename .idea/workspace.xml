@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002ddf32-a8b1-4dfc-9276-7864a8dfaf2e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tenant/management/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tenant/management/commands/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tenant/management/commands/_private.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tenant/management/commands/tenant_setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gmms.iml" afterPath="$PROJECT_DIR$/.idea/gmms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmms/settings.py" afterPath="$PROJECT_DIR$/gmms/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,7 +41,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="gssmlupim@localhost" />
+        <option name="myItemId" value="tms@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -40,7 +51,57 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="gssmlupim@localhost" />
+        <option name="myItemId" value="tms@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="def" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tms@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="def" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tms@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="abc" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tms@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="abc" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
@@ -54,66 +115,15 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transactions/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-                <element signature="e#2683#4042#0" expanded="false" />
-                <element signature="e#4100#5060#0" expanded="false" />
-                <element signature="e#5120#5637#0" expanded="false" />
-                <element signature="e#5700#6238#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transaction_edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmms/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
-              <folding>
-                <marker date="1509023071935" expanded="true" signature="2460:2704" ph="..." />
-                <marker date="1509023071935" expanded="true" signature="2479:2702" ph="..." />
-                <marker date="1509023071935" expanded="true" signature="2709:3149" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transactions/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -141,6 +151,7 @@
       <find>name</find>
       <find>item</find>
       <find>br</find>
+      <find>settings</find>
     </findStrings>
     <replaceStrings>
       <replace>units</replace>
@@ -161,17 +172,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/units/migrations/0006_auto_20171010_1541.py" />
-        <option value="$PROJECT_DIR$/items/migrations/0002_auto_20171012_0644.py" />
-        <option value="$PROJECT_DIR$/all.json" />
-        <option value="$PROJECT_DIR$/users/migrations/0002_auto_20171012_0709.py" />
-        <option value="$PROJECT_DIR$/static/css/login.css" />
-        <option value="$PROJECT_DIR$/items/models.py" />
-        <option value="$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py" />
-        <option value="$PROJECT_DIR$/items/forms.py" />
-        <option value="$PROJECT_DIR$/units/models.py" />
         <option value="$PROJECT_DIR$/templates/customer/transaction_edit.html" />
-        <option value="$PROJECT_DIR$/gmms/urls.py" />
         <option value="$PROJECT_DIR$/customers/urls.py" />
         <option value="$PROJECT_DIR$/templates/users/profile_edit.html" />
         <option value="$PROJECT_DIR$/items/views.py" />
@@ -211,6 +212,16 @@
         <option value="$PROJECT_DIR$/transactions/forms.py" />
         <option value="$PROJECT_DIR$/templates/transactions/transaction_edit.html" />
         <option value="$PROJECT_DIR$/transactions/views.py" />
+        <option value="$PROJECT_DIR$/tenant/models.py" />
+        <option value="$PROJECT_DIR$/tenant/middleware.py" />
+        <option value="$PROJECT_DIR$/gmms/middleware.py" />
+        <option value="$PROJECT_DIR$/gmms/urls.py" />
+        <option value="$PROJECT_DIR$/tenant_setup.py" />
+        <option value="$PROJECT_DIR$/tenant/views.py" />
+        <option value="$PROJECT_DIR$/tenant/management/__init__.py" />
+        <option value="$PROJECT_DIR$/tenant/management/commands/__init__.py" />
+        <option value="$PROJECT_DIR$/tenant/management/commands/_private.py" />
+        <option value="$PROJECT_DIR$/tenant/management/commands/tenant_setup.py" />
         <option value="$PROJECT_DIR$/gmms/settings.py" />
       </list>
     </option>
@@ -223,7 +234,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1360" />
+    <option name="width" value="1366" />
     <option name="height" value="689" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -244,56 +255,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gmms" />
+              <option name="myItemId" value="TMS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gmms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gmms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gmms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transactions" />
+              <option name="myItemId" value="TMS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="setting.py&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;dele&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_li&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;urls&#9;FILE&#9;file:///home/shital/gmms/transactions/urls.py&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_temp&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;vie&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;transactions/f&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/units/unit_edit.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;view&#9;null&#9;null&#10;models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;se&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css&#10;users/ur&#9;FILE&#9;file:///home/shital/gmms/users/urls.py&#10;logi&#9;FILE&#9;file:///home/shital/gmms/templates/users/login.html" />
+    <property name="SearchEverywhereHistoryKey" value="se&#9;FILE&#9;file:///home/shital/TMS/gmms/settings.py&#10;tenant/&#9;FILE&#9;file:///home/shital/TMS/tenant&#10;tenent&#9;null&#9;null&#10;view&#9;FILE&#9;file:///home/shital/TMS/tenant/views.py&#10;vie&#9;FILE&#9;file:///home/shital/TMS/users/views.py&#10;urls&#9;FILE&#9;file:///home/shital/TMS/gmms/urls.py&#10;setting.py&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;setting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;transa&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;dele&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_li&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;model&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_temp&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transactions/f&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;edit&#9;FILE&#9;file:///home/shital/gmms/templates/units/unit_edit.html&#10;sett&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;models&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;odels&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;url&#9;FILE&#9;file:///home/shital/gmms/items/urls.py&#10;ur&#9;FILE&#9;file:///home/shital/gmms/gmms/urls.py&#10;sty&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;base&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;transaction/&#9;FILE&#9;file:///home/shital/gmms/static/js/transaction&#10;tran&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_list.html&#10;ie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;delete&#9;FILE&#9;file:///home/shital/gmms/templates/customer/delete.html&#10;transaction_e&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;item&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;form&#9;FILE&#9;file:///home/shital/gmms/transactions/forms.py&#10;ws&#9;FILE&#9;file:///home/shital/gmms/transactions/views.py&#10;tra&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;users/&#9;FILE&#9;file:///home/shital/gmms/templates/users&#10;base_te&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;main_s&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;ma&#9;FILE&#9;file:///home/shital/gmms/static/base/main_style.css&#10;units/fo&#9;FILE&#9;file:///home/shital/gmms/units/forms.py&#10;items/vie&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;customers/for&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;customers/model&#9;FILE&#9;file:///home/shital/gmms/customers/models.py&#10;mode&#9;FILE&#9;file:///home/shital/gmms/transactions/models.py&#10;base_t&#9;FILE&#9;file:///home/shital/gmms/templates/base_temp.html&#10;views&#9;FILE&#9;file:///home/shital/gmms/customers/views.py&#10;forms&#9;FILE&#9;file:///home/shital/gmms/customers/forms.py&#10;transactio&#9;FILE&#9;file:///home/shital/gmms/templates/transactions/transaction_edit.html&#10;units/mode&#9;FILE&#9;file:///home/shital/gmms/units/models.py&#10;item_&#9;FILE&#9;file:///home/shital/gmms/templates/items/item_edit.html&#10;etting&#9;FILE&#9;file:///home/shital/gmms/gmms/settings.py&#10;v&#9;FILE&#9;file:///home/shital/gmms/items/views.py&#10;vi&#9;FILE&#9;file:///home/shital/gmms/units/views.py&#10;login&#9;FILE&#9;file:///home/shital/gmms/static/css/login.css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.virtualenvs/TMS/bin/python" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gmms" />
+      <recent name="$PROJECT_DIR$/templates/items" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/transactions" />
-      <recent name="$PROJECT_DIR$/templates/items" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/items" />
     </key>
   </component>
@@ -605,13 +604,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1360" height="689" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1366" height="689" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19254185" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22401172" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28419182" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20700152" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22474378" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -628,27 +627,6 @@
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28419182" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24048707" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20700152" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -670,151 +648,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/transaction/transaction_js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0005_auto_20171012_1043.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/0004_auto_20171012_0722.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.unit">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/delete.html" />
-    <entry file="file://$PROJECT_DIR$/templates/items/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/items/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/units/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/users/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/base/main_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/submit_btn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/transaction/create_customer_js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/users/profile_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/users/change_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/customers/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="187" column="53" lean-forward="false" selection-start-line="187" selection-start-column="53" selection-end-line="187" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,9 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="77" lean-forward="false" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="26" column="95" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,23 +690,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.customer" />
     <entry file="file://$PROJECT_DIR$/templates/customer/customer_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
           <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,18 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.users" />
     <entry file="file://$PROJECT_DIR$/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1379">
@@ -915,22 +724,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="87" column="96" lean-forward="false" selection-start-line="87" selection-start-column="96" selection-end-line="87" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.transactions_transaction">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/e04d7b2f/bbdafd9c-556a-4e1d-b5a4-58ea4e13985a/gssmlupim.public.transactions_transaction" />
     <entry file="file://$PROJECT_DIR$/templates/transactions/delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -949,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="97" lean-forward="false" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,9 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,9 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="58" column="78" lean-forward="false" selection-start-line="58" selection-start-column="78" selection-end-line="58" selection-end-column="78" />
-          <folding>
-            <element signature="e#2353#2396#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,9 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="248" column="69" lean-forward="false" selection-start-line="248" selection-start-column="69" selection-end-line="248" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,41 +837,176 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/transactions/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="792">
           <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-            <element signature="e#2683#4042#0" expanded="false" />
-            <element signature="e#4100#5060#0" expanded="false" />
-            <element signature="e#5120#5637#0" expanded="false" />
-            <element signature="e#5700#6238#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/transactions/transaction_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="1098">
           <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="55" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.def.unit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.def.item">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.def.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.abc.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmms/middleware.py" />
+    <entry file="file://$PROJECT_DIR$/gmms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant_setup.py" />
+    <entry file="file://$PROJECT_DIR$/tenant/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant/management/commands/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant/management/commands/_private.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.def.transactions_transaction">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.abc.transactions_transaction">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fef9f277/96fd80d4-e5c0-40c6-87aa-bc79757f9ba4/tms.public.tenant_tmstenant">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gmms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
-          <folding>
-            <marker date="1509023071935" expanded="true" signature="2460:2704" ph="..." />
-            <marker date="1509023071935" expanded="true" signature="2479:2702" ph="..." />
-            <marker date="1509023071935" expanded="true" signature="2709:3149" ph="..." />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant/management/commands/tenant_setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>

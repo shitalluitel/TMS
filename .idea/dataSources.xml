@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="gssmlupim@localhost" uuid="bbdafd9c-556a-4e1d-b5a4-58ea4e13985a">
+    <data-source source="LOCAL" name="tms@localhost" uuid="96fd80d4-e5c0-40c6-87aa-bc79757f9ba4">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/gssmlupim</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/tms</jdbc-url>
     </data-source>
   </component>
 </project>
