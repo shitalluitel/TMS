@@ -203,8 +203,9 @@ def user_profile_edit(request):
     """
     Edit user profile
     """
-    form = ProfileForm(instance=request.user, data=request.POST or None)
+    form = ProfileForm(instance=request.user)
     if request.method == 'POST':
+        form = ProfileForm(request.POST or None, request.FILES, instance=request.user)
         if form.is_valid():
             form.save()
             messages.success(request, "Profile updated.")

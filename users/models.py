@@ -8,6 +8,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.db import models
 from django.conf import settings
 from django.template.defaultfilters import safe
+from django.utils.safestring import mark_safe
 
 from .validators import UsernameValidator
 from django.core.mail import EmailMessage
@@ -64,11 +65,18 @@ class User(AbstractBaseUser):
     is_confirmed = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    image = models.ImageField(upload_to="profile_picture/", default="profile_picture/none/no_image_user.png")
 
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
+
+    def image_tag(self):
+        return mark_safe('<img src="/directory/%s" width="150" height="150" />' % (self.image))
+
+    image_tag.short_description = 'Image'
+    image_tag.allow_tag = True
 
     def get_full_name(self):
         return ' '.join([self.first_name, self.last_name])
@@ -121,7 +129,8 @@ class User(AbstractBaseUser):
         token = self.generate_password_reset_token()
         link = settings.BASE_URL + 'users/password_reset?token={}'.format(token)
         # link = 'http://localhost' + '/users/password_reset?token={}'.format(token)
-        html = '<html><body>Click on the below link to reset your password.<br> <a href="{}">{}</a></body></html>'.format(link, link)
+        html = '<html><body>Click on the below link to reset your password.<br> <a href="{}">{}</a></body></html>'.format(
+            link, link)
         # data = {
         #     'from': "{} <{}>".format('Daily Cost', settings.ADMIN_EMAIL),
         #     'to': self.email,
