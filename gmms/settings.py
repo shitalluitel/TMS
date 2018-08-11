@@ -181,6 +181,6 @@ for email google smtp
 '''
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'thefidgetcoders@gmail.com'
-EMAIL_HOST_PASSWORD = 'fidget@c0d3r5'
+EMAIL_HOST_USER = '***'
+EMAIL_HOST_PASSWORD = '****'
 EMAIL_PORT = 587
