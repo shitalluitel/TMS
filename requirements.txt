@@ -3,7 +3,7 @@ CairoSVG==2.0.3
 cffi==1.11.0
 cssselect==1.0.1
 decorator==4.1.2
-Django==1.11.5
+Django==1.11.29
 django-environ==0.4.1
 django-storages==1.5.2
 django-tenant-schemas==1.9.0
