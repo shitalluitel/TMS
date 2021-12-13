@@ -12,7 +12,7 @@ gunicorn==19.6.0
 html5lib==0.999999999
 ipython==5.1.0
 ipython-genutils==0.2.0
-lxml==4.0.0
+lxml==4.6.5
 olefile==0.44
 pexpect==4.2.1
 pickleshare==0.7.4
